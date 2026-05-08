@@ -1,0 +1,9 @@
+{
+  "apiBaseUrl": "http://localhost:8081",
+  "defaultLang": "es-ES",
+  "supportedLangs": ["es-ES", "en-EN"],
+  "requestTimeoutMs": 30000,
+  "batchRequestTimeoutMs": 5000,
+  "useMockApi": true,
+  "useEndpointV2": true
+}

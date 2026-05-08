@@ -1,0 +1,17 @@
+{
+  "page_title": "Consulta Estados Cuenta",
+  "label_dni": "DNI",
+  "label_results": "Resultados de Búsqueda",
+  "label_cuenta_id": "ID Cuenta",
+  "label_nombre": "Nombre",
+  "label_estado": "Estado",
+  "btn_search": "Buscar",
+  "btn_new_search": "Nueva Búsqueda",
+  "btn_consult_all": "Consultar Todos",
+  "btn_consult_selected": "Consultar Seleccionados",
+  "help_dni": "Ingrese un DNI válido (8 dígitos + 1 letra)",
+  "no_results": "No se encontraron resultados",
+  "error_no_accounts_selected": "Debe seleccionar al menos una cuenta",
+  "error_search": "Error durante la búsqueda",
+  "error_consult": "Error consultando cuentas"
+}

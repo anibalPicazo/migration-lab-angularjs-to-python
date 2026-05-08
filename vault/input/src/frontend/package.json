@@ -1,0 +1,25 @@
+{
+  "name": "app-frontend",
+  "version": "1.0.0",
+  "description": "AngularJS SPA para consulta de estados de cuentas",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8082 -c-1",
+    "dev": "http-server -p 8082 -c-1",
+    "test": "npx karma start karma.conf.js --single-run",
+    "test:watch": "npx karma start karma.conf.js"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "1.x",
+    "angular": "1.7.x"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.8.3",
+    "http-server": "^14.1.1",
+    "jasmine-core": "^4.6.0",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^5.1.0"
+  }
+}

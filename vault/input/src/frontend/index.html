@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Estados Cuenta</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <app-header></app-header>
+        <main class="app-main">
+            <app-error-banner></app-error-banner>
+            <ui-view></ui-view>
+        </main>
+        <app-footer></app-footer>
+    </div>
+
+    <!-- AngularJS and UI-Router -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+
+    <!-- App Module -->
+    <script src="src/app/app.module.js"></script>
+
+    <!-- Config -->
+    <script src="src/app/config/app.config.js"></script>
+
+    <!-- Services -->
+    <script src="src/app/services/config.service.js"></script>
+    <script src="src/app/services/i18n.service.js"></script>
+    <script src="src/app/services/error.service.js"></script>
+    <script src="src/app/services/mock-data.service.js"></script>
+    <script src="src/app/services/api.service.js"></script>
+    <script src="src/app/services/cuentas.service.js"></script>
+
+    <!-- Filters and Directives -->
+    <script src="src/app/i18n/translate.filter.js"></script>
+    <script src="src/app/i18n/dni-validator.directive.js"></script>
+
+    <!-- HTTP Interceptor -->
+    <script src="src/app/config/http.interceptor.js"></script>
+
+    <!-- Components -->
+    <script src="src/app/components/header/header.component.js"></script>
+    <script src="src/app/components/footer/footer.component.js"></script>
+    <script src="src/app/components/loading-spinner/loading-spinner.component.js"></script>
+    <script src="src/app/components/error-banner/error-banner.component.js"></script>
+
+    <!-- Pages -->
+    <script src="src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js"></script>
+</body>
+</html>

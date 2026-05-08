@@ -1,0 +1,17 @@
+{
+  "page_title": "Account Status Inquiry",
+  "label_dni": "DNI",
+  "label_results": "Search Results",
+  "label_cuenta_id": "Account ID",
+  "label_nombre": "Name",
+  "label_estado": "Status",
+  "btn_search": "Search",
+  "btn_new_search": "New Search",
+  "btn_consult_all": "Consult All",
+  "btn_consult_selected": "Consult Selected",
+  "help_dni": "Enter a valid DNI (8 digits + 1 letter)",
+  "no_results": "No results found",
+  "error_no_accounts_selected": "You must select at least one account",
+  "error_search": "Error during search",
+  "error_consult": "Error consulting accounts"
+}
