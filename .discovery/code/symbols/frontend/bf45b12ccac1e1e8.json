@@ -1,0 +1,34 @@
+{
+  "file": "src/app/config/app.config.js",
+  "file_hash": "sha256:29282b0554c8",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.559Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/config/app.config.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/config/app.config.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/config/app.config.js::angular_config_line_4:4",
+      "name": "angular_config_line_4",
+      "kind": "angular_config",
+      "type": "config",
+      "file": "src/app/config/app.config.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

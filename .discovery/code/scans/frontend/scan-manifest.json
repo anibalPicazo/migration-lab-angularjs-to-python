@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "scanned_at": "2026-05-08T00:00:00.000Z",
+  "root": "vault/input/src/frontend",
+  "slug": "frontend",
+  "languages": [
+    {
+      "language": "javascript",
+      "files": 30,
+      "extensions": [".js"],
+      "confidence": "high",
+      "details": {
+        "source_files": 16,
+        "test_files": 14
+      }
+    },
+    {
+      "language": "html",
+      "files": 1,
+      "extensions": [".html"],
+      "confidence": "high"
+    },
+    {
+      "language": "css",
+      "files": 1,
+      "extensions": [".css"],
+      "confidence": "high"
+    },
+    {
+      "language": "json",
+      "files": 5,
+      "extensions": [".json"],
+      "confidence": "high",
+      "details": {
+        "config_files": 3,
+        "package_files": 2
+      }
+    }
+  ],
+  "frameworks": ["angularjs-1.7", "ui-router", "karma", "jasmine"],
+  "manifests_found": ["package.json", "package-lock.json", "karma.conf.js"],
+  "entry_points": ["index.html", "src/app/app.module.js"],
+  "directories": {
+    "total": 24,
+    "source": [
+      "src/",
+      "src/app/",
+      "src/app/components/",
+      "src/app/config/",
+      "src/app/i18n/",
+      "src/app/pages/",
+      "src/app/services/",
+      "src/assets/",
+      "src/styles/"
+    ],
+    "test": [
+      "tests/",
+      "tests/components/",
+      "tests/i18n/",
+      "tests/integration/",
+      "tests/pages/",
+      "tests/services/"
+    ],
+    "config": [],
+    "excluded": ["node_modules/", ".discovery/"]
+  },
+  "files": {
+    "source": [
+      "index.html",
+      "src/styles/main.css",
+      "src/assets/config.json",
+      "src/assets/i18n/es-ES.json",
+      "src/assets/i18n/en-EN.json",
+      "src/app/app.module.js",
+      "src/app/config/app.config.js",
+      "src/app/config/http.interceptor.js",
+      "src/app/services/api.service.js",
+      "src/app/services/config.service.js",
+      "src/app/services/cuentas.service.js",
+      "src/app/services/error.service.js",
+      "src/app/services/i18n.service.js",
+      "src/app/services/mock-data.service.js",
+      "src/app/i18n/translate.filter.js",
+      "src/app/i18n/dni-validator.directive.js",
+      "src/app/components/error-banner/error-banner.component.js",
+      "src/app/components/footer/footer.component.js",
+      "src/app/components/header/header.component.js",
+      "src/app/components/loading-spinner/loading-spinner.component.js",
+      "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js"
+    ],
+    "test": [
+      "tests/test-helpers.js",
+      "tests/components/footer.component.spec.js",
+      "tests/components/header.component.spec.js",
+      "tests/i18n/dni-validator.directive.spec.js",
+      "tests/i18n/translate.filter.spec.js",
+      "tests/integration/consulta-estados-cuentas.e2e.spec.js",
+      "tests/pages/consulta-estados-cuentas.component.spec.js",
+      "tests/services/api.service.spec.js",
+      "tests/services/config.service.spec.js",
+      "tests/services/cuentas.service.spec.js",
+      "tests/services/error.service.spec.js",
+      "tests/services/i18n.service.spec.js",
+      "tests/services/mock-data.service.spec.js"
+    ],
+    "config": ["package.json", "package-lock.json", "karma.conf.js"]
+  },
+  "total_files": 37,
+  "user_context": "AngularJS 1.7.x SPA application for account statement queries. Migration target: Python 3.12 with FastAPI server-side rendering.",
+  "exclusions": [],
+  "architecture_notes": {
+    "pattern": "AngularJS 1.x SPA with UI-Router",
+    "modules": [
+      {
+        "name": "appModule",
+        "type": "main",
+        "dependencies": ["ui.router"]
+      }
+    ],
+    "components": ["header", "footer", "error-banner", "loading-spinner"],
+    "pages": ["consulta-estados-cuentas"],
+    "services": [
+      "api.service (HTTP client)",
+      "config.service (config loader)",
+      "cuentas.service (business logic)",
+      "error.service (error handling)",
+      "i18n.service (internationalization)",
+      "mock-data.service (demo mode)"
+    ],
+    "i18n": {
+      "supported_languages": ["es-ES", "en-EN"],
+      "mechanism": "custom translate filter + i18n service"
+    },
+    "testing": {
+      "framework": "Karma + Jasmine",
+      "unit_tests": 12,
+      "e2e_tests": 1,
+      "test_helper": "tests/test-helpers.js"
+    }
+  }
+}

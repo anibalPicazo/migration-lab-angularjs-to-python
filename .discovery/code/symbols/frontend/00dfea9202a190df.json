@@ -1,0 +1,177 @@
+{
+  "file": "src/assets/i18n/es-ES.json",
+  "file_hash": "sha256:b06433a86e6a",
+  "language": "json",
+  "category": "i18n",
+  "parsed_at": "2026-05-08T12:00:53.549Z",
+  "parser": {
+    "primary": "json-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/assets/i18n/es-ES.json::page_title",
+      "type": "i18n_key",
+      "name": "page_title",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_dni",
+      "type": "i18n_key",
+      "name": "label_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_results",
+      "type": "i18n_key",
+      "name": "label_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_cuenta_id",
+      "type": "i18n_key",
+      "name": "label_cuenta_id",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_nombre",
+      "type": "i18n_key",
+      "name": "label_nombre",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_estado",
+      "type": "i18n_key",
+      "name": "label_estado",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_search",
+      "type": "i18n_key",
+      "name": "btn_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_new_search",
+      "type": "i18n_key",
+      "name": "btn_new_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_consult_all",
+      "type": "i18n_key",
+      "name": "btn_consult_all",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_consult_selected",
+      "type": "i18n_key",
+      "name": "btn_consult_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::help_dni",
+      "type": "i18n_key",
+      "name": "help_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::no_results",
+      "type": "i18n_key",
+      "name": "no_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_no_accounts_selected",
+      "type": "i18n_key",
+      "name": "error_no_accounts_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_search",
+      "type": "i18n_key",
+      "name": "error_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_consult",
+      "type": "i18n_key",
+      "name": "error_consult",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "i18n"
+    }
+  ]
+}

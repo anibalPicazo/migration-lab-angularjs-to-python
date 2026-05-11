@@ -1,0 +1,68 @@
+{
+  "file": "index.html",
+  "file_hash": "sha256:6b52d4a20989",
+  "language": "html",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.531Z",
+  "parser": {
+    "primary": "text-extract"
+  },
+  "symbols": [
+    {
+      "id": "index.html::app-header:11",
+      "name": "app-header",
+      "kind": "angular_component_usage",
+      "type": "component_tag",
+      "file": "index.html",
+      "line": 11,
+      "confidence": "high",
+      "source": "text-extract",
+      "category": "source"
+    },
+    {
+      "id": "index.html::app-error-banner:13",
+      "name": "app-error-banner",
+      "kind": "angular_component_usage",
+      "type": "component_tag",
+      "file": "index.html",
+      "line": 13,
+      "confidence": "high",
+      "source": "text-extract",
+      "category": "source"
+    },
+    {
+      "id": "index.html::app-footer:16",
+      "name": "app-footer",
+      "kind": "angular_component_usage",
+      "type": "component_tag",
+      "file": "index.html",
+      "line": 16,
+      "confidence": "high",
+      "source": "text-extract",
+      "category": "source"
+    },
+    {
+      "id": "index.html::ng-app:2",
+      "name": "ng-app",
+      "kind": "angular_directive",
+      "type": "directive",
+      "value": "appModule",
+      "file": "index.html",
+      "line": 2,
+      "confidence": "high",
+      "source": "text-extract",
+      "category": "source"
+    },
+    {
+      "id": "index.html::ui-view",
+      "name": "ui-view",
+      "kind": "router_outlet",
+      "type": "ui_router",
+      "file": "index.html",
+      "line": 14,
+      "confidence": "high",
+      "source": "text-extract",
+      "category": "source"
+    }
+  ]
+}

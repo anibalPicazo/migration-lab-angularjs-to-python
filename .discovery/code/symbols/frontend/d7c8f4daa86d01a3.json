@@ -1,0 +1,34 @@
+{
+  "file": "tests/i18n/dni-validator.directive.spec.js",
+  "file_hash": "sha256:80a3933dc0b9",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.622Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "tests/i18n/dni-validator.directive.spec.js::angular_controller_line_24:24",
+      "name": "angular_controller_line_24",
+      "kind": "angular_controller",
+      "type": "controller",
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 24,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "test"
+    },
+    {
+      "id": "tests/i18n/dni-validator.directive.spec.js::compileInput:19",
+      "name": "compileInput",
+      "kind": "function",
+      "type": "function_declaration",
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 19,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "test"
+    }
+  ]
+}

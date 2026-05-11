@@ -1,0 +1,47 @@
+{
+  "file": "src/app/services/i18n.service.js",
+  "file_hash": "sha256:8cfecd0933a2",
+  "language": "js",
+  "category": "i18n",
+  "parsed_at": "2026-05-08T12:00:53.577Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/services/i18n.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/services/i18n.service.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/i18n.service.js::i18nService:4",
+      "name": "i18nService",
+      "kind": "angular_service",
+      "type": "service",
+      "file": "src/app/services/i18n.service.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/i18n.service.js::http:34",
+      "name": "src/assets/i18n/",
+      "kind": "http_call",
+      "type": "api_call",
+      "method": "GET",
+      "endpoint": "src/assets/i18n/",
+      "file": "src/app/services/i18n.service.js",
+      "line": 34,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

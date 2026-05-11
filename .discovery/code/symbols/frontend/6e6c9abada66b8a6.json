@@ -1,0 +1,96 @@
+{
+  "file": "src/assets/config.json",
+  "file_hash": "sha256:40490d724a7e",
+  "language": "json",
+  "category": "config",
+  "parsed_at": "2026-05-08T12:00:53.545Z",
+  "parser": {
+    "primary": "json-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/assets/config.json::apiBaseUrl",
+      "type": "endpoint_url",
+      "name": "apiBaseUrl",
+      "kind": "endpoint_url",
+      "value": "http://localhost:8081",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::defaultLang",
+      "type": "config_entry",
+      "name": "defaultLang",
+      "kind": "config_entry",
+      "value": "es-ES",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::supportedLangs",
+      "type": "config_entry",
+      "name": "supportedLangs",
+      "kind": "config_entry",
+      "value": "[\"es-ES\",\"en-EN\"]",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::requestTimeoutMs",
+      "type": "config_entry",
+      "name": "requestTimeoutMs",
+      "kind": "config_entry",
+      "value": "30000",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::batchRequestTimeoutMs",
+      "type": "config_entry",
+      "name": "batchRequestTimeoutMs",
+      "kind": "config_entry",
+      "value": "5000",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::useMockApi",
+      "type": "endpoint_url",
+      "name": "useMockApi",
+      "kind": "endpoint_url",
+      "value": "true",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    },
+    {
+      "id": "src/assets/config.json::useEndpointV2",
+      "type": "endpoint_url",
+      "name": "useEndpointV2",
+      "kind": "endpoint_url",
+      "value": "true",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "confidence": "high",
+      "source": "json-parse",
+      "category": "config"
+    }
+  ]
+}

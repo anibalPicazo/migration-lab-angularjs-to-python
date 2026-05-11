@@ -1,0 +1,11 @@
+{
+  "file": "tests/pages/consulta-estados-cuentas.component.spec.js",
+  "file_hash": "sha256:e342d418ec15",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.632Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

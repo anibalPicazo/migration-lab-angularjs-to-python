@@ -1,0 +1,45 @@
+{
+  "file": "src/app/config/http.interceptor.js",
+  "file_hash": "sha256:3caaecbaa2d7",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.562Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/config/http.interceptor.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/config/http.interceptor.js::HttpErrorInterceptor:4",
+      "name": "HttpErrorInterceptor",
+      "kind": "angular_service",
+      "type": "service",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/config/http.interceptor.js::angular_config_line_23:23",
+      "name": "angular_config_line_23",
+      "kind": "angular_config",
+      "type": "config",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 23,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

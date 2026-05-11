@@ -1,0 +1,11 @@
+{
+  "file": "tests/services/cuentas.service.spec.js",
+  "file_hash": "sha256:d765dac74f01",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.644Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

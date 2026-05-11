@@ -1,0 +1,34 @@
+{
+  "file": "src/app/services/error.service.js",
+  "file_hash": "sha256:ef3d288c2173",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.574Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/services/error.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/services/error.service.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/error.service.js::ErrorService:4",
+      "name": "ErrorService",
+      "kind": "angular_service",
+      "type": "service",
+      "file": "src/app/services/error.service.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

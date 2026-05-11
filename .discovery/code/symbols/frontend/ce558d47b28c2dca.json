@@ -1,0 +1,47 @@
+{
+  "file": "src/app/services/config.service.js",
+  "file_hash": "sha256:6300ba2931b4",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.567Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/services/config.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/services/config.service.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/config.service.js::ConfigService:4",
+      "name": "ConfigService",
+      "kind": "angular_service",
+      "type": "service",
+      "file": "src/app/services/config.service.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/config.service.js::http:13",
+      "name": "src/assets/config.json",
+      "kind": "http_call",
+      "type": "api_call",
+      "method": "GET",
+      "endpoint": "src/assets/config.json",
+      "file": "src/app/services/config.service.js",
+      "line": 13,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

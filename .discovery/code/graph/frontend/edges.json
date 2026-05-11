@@ -1,0 +1,4994 @@
+{
+  "version": 2,
+  "generated_at": "2026-05-08T12:02:19.912Z",
+  "module_slug": "frontend",
+  "total_edges": 452,
+  "by_type": {
+    "CONTAINS": 331,
+    "TESTS": 4,
+    "REGISTERS": 19,
+    "CALLS_API": 2,
+    "USES_ROUTER": 1,
+    "USES_I18N": 44,
+    "DEFINES_STYLE": 43,
+    "DEFINES_ENDPOINT": 8
+  },
+  "by_confidence": {
+    "high": 408,
+    "medium": 44
+  },
+  "edges": [
+    {
+      "source": "index.html",
+      "target": "index.html::ng-app:2",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "index.html",
+      "line": 2
+    },
+    {
+      "source": "index.html",
+      "target": "index.html::ui-view",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "index.html",
+      "line": 14
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.app-container",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 114
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.app-main",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 120
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.container",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 125
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.stack",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 131
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.row",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 137
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.spacer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 143
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.btn",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 151
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.btn--primary",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 170
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.btn--outlined-secondary",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 179
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.btn--small",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 189
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.field",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 198
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.label",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 205
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.input",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 211
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.input-error",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 230
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.input-success",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 234
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.card",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 242
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.card-header",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 254
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.card-title",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 260
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.card-body",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 265
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.card-footer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 269
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.app-header",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 289
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.app-header-title",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 296
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.app-header-right",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 301
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.language-selector",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 307
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.error-banner",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 342
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.error-message",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 365
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.error-close",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 369
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.loading-spinner",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 384
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.spinner-size-sm",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 400
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.spinner-size-md",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 405
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.spinner-size-lg",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 410
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.validation-icon",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 457
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.validation-icon--success",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 463
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.validation-icon--error",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 467
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.text-center",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 475
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.text-right",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 479
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.mb-md",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 483
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.mb-lg",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 487
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.mt-md",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 491
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.mt-lg",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 495
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.d-flex",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 499
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.gap-md",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 503
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "src/styles/main.css::.gap-lg",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/styles/main.css",
+      "line": 507
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::apiBaseUrl",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::defaultLang",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::supportedLangs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::requestTimeoutMs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::batchRequestTimeoutMs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::useMockApi",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "src/assets/config.json::useEndpointV2",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::page_title",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::label_dni",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::label_results",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::label_cuenta_id",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::label_nombre",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::label_estado",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::btn_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::btn_new_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::btn_consult_all",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::btn_consult_selected",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::help_dni",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::no_results",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::error_no_accounts_selected",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::error_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/es-ES.json",
+      "target": "src/assets/i18n/es-ES.json::error_consult",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::page_title",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::label_dni",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::label_results",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::label_cuenta_id",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::label_nombre",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::label_estado",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::btn_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::btn_new_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::btn_consult_all",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::btn_consult_selected",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::help_dni",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::no_results",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::error_no_accounts_selected",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::error_search",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/i18n/en-EN.json",
+      "target": "src/assets/i18n/en-EN.json::error_consult",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1
+    },
+    {
+      "source": "src/app/app.module.js",
+      "target": "src/app/app.module.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/app.module.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/app.module.js",
+      "target": "src/app/app.module.js::angular_run_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/app.module.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/app.config.js",
+      "target": "src/app/config/app.config.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/app.config.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/config/app.config.js",
+      "target": "src/app/config/app.config.js::angular_config_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/app.config.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/http.interceptor.js",
+      "target": "src/app/config/http.interceptor.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/config/http.interceptor.js",
+      "target": "src/app/config/http.interceptor.js::HttpErrorInterceptor:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/http.interceptor.js",
+      "target": "src/app/config/http.interceptor.js::angular_config_line_23:23",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": 23
+    },
+    {
+      "source": "src/app/services/api.service.js",
+      "target": "src/app/services/api.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/api.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/api.service.js",
+      "target": "src/app/services/api.service.js::ApiService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/api.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/config.service.js",
+      "target": "src/app/services/config.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/config.service.js",
+      "target": "src/app/services/config.service.js::ConfigService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/cuentas.service.js",
+      "target": "src/app/services/cuentas.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/cuentas.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/cuentas.service.js",
+      "target": "src/app/services/cuentas.service.js::CuentasService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/cuentas.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/error.service.js",
+      "target": "src/app/services/error.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/error.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/error.service.js",
+      "target": "src/app/services/error.service.js::ErrorService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/error.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/i18n.service.js",
+      "target": "src/app/services/i18n.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/i18n.service.js",
+      "target": "src/app/services/i18n.service.js::i18nService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/mock-data.service.js",
+      "target": "src/app/services/mock-data.service.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/mock-data.service.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/services/mock-data.service.js",
+      "target": "src/app/services/mock-data.service.js::MockDataService:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/mock-data.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js",
+      "target": "src/app/i18n/translate.filter.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js",
+      "target": "src/app/i18n/translate.filter.js::angular_filter_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js",
+      "target": "src/app/i18n/translate.filter.js::angular_directive_line_11:11",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 11
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/app/i18n/dni-validator.directive.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/app/i18n/dni-validator.directive.js::angular_filter_line_44:44",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 44
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/app/i18n/dni-validator.directive.js::angular_directive_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/app/i18n/dni-validator.directive.js::isValidDni:9",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 9
+    },
+    {
+      "source": "src/app/components/error-banner/error-banner.component.js",
+      "target": "src/app/components/error-banner/error-banner.component.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/components/error-banner/error-banner.component.js",
+      "target": "src/app/components/error-banner/error-banner.component.js::angular_component_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/footer/footer.component.js",
+      "target": "src/app/components/footer/footer.component.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/footer/footer.component.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/components/footer/footer.component.js",
+      "target": "src/app/components/footer/footer.component.js::angular_component_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/footer/footer.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/header/header.component.js",
+      "target": "src/app/components/header/header.component.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/header/header.component.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/components/header/header.component.js",
+      "target": "src/app/components/header/header.component.js::angular_component_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/header/header.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "target": "src/app/components/loading-spinner/loading-spinner.component.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "target": "src/app/components/loading-spinner/loading-spinner.component.js::angular_component_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "target": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::appModule",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": 3
+    },
+    {
+      "source": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "target": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::angular_component_line_4:4",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": 4
+    },
+    {
+      "source": "tests/test-helpers.js",
+      "target": "tests/test-helpers.js::angular_run_line_6:6",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/test-helpers.js",
+      "line": 6
+    },
+    {
+      "source": "tests/test-helpers.js",
+      "target": "tests/test-helpers.js::angular_run_line_25:25",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/test-helpers.js",
+      "line": 25
+    },
+    {
+      "source": "tests/test-helpers.js",
+      "target": "tests/test-helpers.js::setupGlobalMocks:29",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/test-helpers.js",
+      "line": 29
+    },
+    {
+      "source": "tests/i18n/dni-validator.directive.spec.js",
+      "target": "tests/i18n/dni-validator.directive.spec.js::angular_controller_line_24:24",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 24
+    },
+    {
+      "source": "tests/i18n/dni-validator.directive.spec.js",
+      "target": "tests/i18n/dni-validator.directive.spec.js::compileInput:19",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 19
+    },
+    {
+      "source": "tests/services/api.service.spec.js",
+      "target": "tests/services/api.service.spec.js::angular_run_line_42:42",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/api.service.spec.js",
+      "line": 42
+    },
+    {
+      "source": "tests/services/config.service.spec.js",
+      "target": "tests/services/config.service.spec.js::angular_run_line_11:11",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/config.service.spec.js",
+      "line": 11
+    },
+    {
+      "source": "tests/services/config.service.spec.js",
+      "target": "tests/services/config.service.spec.js::angular_run_line_21:21",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/config.service.spec.js",
+      "line": 21
+    },
+    {
+      "source": "tests/services/i18n.service.spec.js",
+      "target": "tests/services/i18n.service.spec.js::angular_run_line_8:8",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 8
+    },
+    {
+      "source": "tests/services/i18n.service.spec.js",
+      "target": "tests/services/i18n.service.spec.js::angular_run_line_18:18",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 18
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::name",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::version",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::description",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::main",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::scripts.start",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::scripts.dev",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::scripts.test",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::scripts.test:watch",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::dependencies.@uirouter/angularjs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::dependencies.angular",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.angular-mocks",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.http-server",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.jasmine-core",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.karma",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.karma-chrome-launcher",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.karma-firefox-launcher",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "package.json::devDependencies.karma-jasmine",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::name",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::version",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::lockfileVersion",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::requires",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@colors/colors",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@socket.io/component-emitter",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@types/cors",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@types/node",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@types/ws",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@uirouter/angularjs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/@uirouter/core",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/accepts",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/angular",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/angular-mocks",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ansi-regex",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ansi-styles",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/anymatch",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/async",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/balanced-match",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/base64id",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/basic-auth",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/basic-auth/node_modules/safe-buffer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/binary-extensions",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/body-parser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/body-parser/node_modules/debug",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/body-parser/node_modules/ms",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/brace-expansion",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/braces",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/bytes",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/call-bind-apply-helpers",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/call-bound",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/chalk",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/chokidar",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/cliui",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/color-convert",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/color-name",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/concat-map",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/connect",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/connect/node_modules/debug",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/connect/node_modules/ms",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/content-type",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/cookie",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/cors",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/corser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/custom-event",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/date-format",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/debug",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/depd",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/destroy",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/di",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/dom-serialize",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/dunder-proto",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ee-first",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/emoji-regex",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/encodeurl",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/engine.io",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/engine.io-parser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ent",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/es-define-property",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/es-errors",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/es-object-atoms",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/escalade",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/escape-html",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/eventemitter3",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/extend",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/fill-range",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/finalhandler",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/finalhandler/node_modules/debug",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/finalhandler/node_modules/ms",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/finalhandler/node_modules/on-finished",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/flatted",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/follow-redirects",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/fs-extra",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/fs.realpath",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/fsevents",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/function-bind",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/get-caller-file",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/get-intrinsic",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/get-proto",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/glob",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/glob-parent",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/gopd",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/graceful-fs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/has-flag",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/has-symbols",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/has-tostringtag",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/hasown",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/he",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/html-encoding-sniffer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/http-errors",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/http-errors/node_modules/statuses",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/http-proxy",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/http-server",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/http-server/node_modules/mime",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/iconv-lite",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/inflight",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/inherits",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-binary-path",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-docker",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-extglob",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-fullwidth-code-point",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-glob",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-number",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-regex",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/is-wsl",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/isbinaryfile",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/isexe",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/jasmine-core",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/jsonfile",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/karma",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/karma-chrome-launcher",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/karma-firefox-launcher",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/karma-firefox-launcher/node_modules/which",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/karma-jasmine",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/lodash",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/log4js",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/math-intrinsics",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/media-typer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/mime",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/mime-db",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/mime-types",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/minimatch",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/minimist",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/mkdirp",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ms",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/negotiator",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/normalize-path",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/object-assign",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/object-inspect",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/on-finished",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/once",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/opener",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/parseurl",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/path-is-absolute",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/picomatch",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/portfinder",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/punycode",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/qjobs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/qs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/range-parser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/raw-body",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/readdirp",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/require-directory",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/requires-port",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/rfdc",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/rimraf",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/safe-regex-test",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/safer-buffer",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/secure-compare",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/setprototypeof",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/side-channel",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/side-channel-list",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/side-channel-map",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/side-channel-weakmap",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/socket.io",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/socket.io-adapter",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/socket.io-parser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/source-map",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/statuses",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/streamroller",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/string-width",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/strip-ansi",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/supports-color",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/tmp",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/to-regex-range",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/toidentifier",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/type-is",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ua-parser-js",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/undici-types",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/union",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/universalify",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/unpipe",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/url-join",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/utils-merge",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/vary",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/void-elements",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/whatwg-encoding",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/whatwg-encoding/node_modules/iconv-lite",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/which",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/wrap-ansi",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/wrappy",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/ws",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/y18n",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/yargs",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "package-lock.json::packages.node_modules/yargs-parser",
+      "type": "CONTAINS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "tests/i18n/dni-validator.directive.spec.js",
+      "target": "src/app/i18n/dni-validator.directive.js",
+      "type": "TESTS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/api.service.spec.js",
+      "target": "src/app/services/api.service.js",
+      "type": "TESTS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/api.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/config.service.spec.js",
+      "target": "src/app/services/config.service.js",
+      "type": "TESTS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/config.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/i18n.service.spec.js",
+      "target": "src/app/services/i18n.service.js",
+      "type": "TESTS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "tests/services/i18n.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "src/app/app.module.js::appModule",
+      "target": "src/app/app.module.js::angular_run_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/app.module.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/app.config.js::appModule",
+      "target": "src/app/config/app.config.js::angular_config_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/app.config.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/http.interceptor.js::appModule",
+      "target": "src/app/config/http.interceptor.js::HttpErrorInterceptor:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/config/http.interceptor.js::appModule",
+      "target": "src/app/config/http.interceptor.js::angular_config_line_23:23",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": 23
+    },
+    {
+      "source": "src/app/services/api.service.js::appModule",
+      "target": "src/app/services/api.service.js::ApiService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/api.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/config.service.js::appModule",
+      "target": "src/app/services/config.service.js::ConfigService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/cuentas.service.js::appModule",
+      "target": "src/app/services/cuentas.service.js::CuentasService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/cuentas.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/error.service.js::appModule",
+      "target": "src/app/services/error.service.js::ErrorService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/error.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/i18n.service.js::appModule",
+      "target": "src/app/services/i18n.service.js::i18nService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/mock-data.service.js::appModule",
+      "target": "src/app/services/mock-data.service.js::MockDataService:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/mock-data.service.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js::appModule",
+      "target": "src/app/i18n/translate.filter.js::angular_filter_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js::appModule",
+      "target": "src/app/i18n/translate.filter.js::angular_directive_line_11:11",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 11
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js::appModule",
+      "target": "src/app/i18n/dni-validator.directive.js::angular_filter_line_44:44",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 44
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js::appModule",
+      "target": "src/app/i18n/dni-validator.directive.js::angular_directive_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/error-banner/error-banner.component.js::appModule",
+      "target": "src/app/components/error-banner/error-banner.component.js::angular_component_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/footer/footer.component.js::appModule",
+      "target": "src/app/components/footer/footer.component.js::angular_component_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/footer/footer.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/header/header.component.js::appModule",
+      "target": "src/app/components/header/header.component.js::angular_component_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/header/header.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/components/loading-spinner/loading-spinner.component.js::appModule",
+      "target": "src/app/components/loading-spinner/loading-spinner.component.js::angular_component_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::appModule",
+      "target": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::angular_component_line_4:4",
+      "type": "REGISTERS",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": 4
+    },
+    {
+      "source": "src/app/services/config.service.js::ConfigService:4",
+      "target": "api::undefined::undefined",
+      "type": "CALLS_API",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": 13
+    },
+    {
+      "source": "src/app/services/i18n.service.js::i18nService:4",
+      "target": "api::undefined::undefined",
+      "type": "CALLS_API",
+      "confidence": "high",
+      "sources": [
+        "regex-parse"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": 34
+    },
+    {
+      "source": "index.html",
+      "target": "router::ui-router",
+      "type": "USES_ROUTER",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "index.html",
+      "line": 14
+    },
+    {
+      "source": "index.html",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "index.html",
+      "line": null
+    },
+    {
+      "source": "index.html",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "index.html",
+      "line": null
+    },
+    {
+      "source": "src/app/app.module.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/app.module.js",
+      "line": null
+    },
+    {
+      "source": "src/app/app.module.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/app.module.js",
+      "line": null
+    },
+    {
+      "source": "src/app/config/app.config.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/config/app.config.js",
+      "line": null
+    },
+    {
+      "source": "src/app/config/app.config.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/config/app.config.js",
+      "line": null
+    },
+    {
+      "source": "src/app/config/http.interceptor.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": null
+    },
+    {
+      "source": "src/app/config/http.interceptor.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/config/http.interceptor.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/api.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/api.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/api.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/api.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/config.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/config.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/config.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/cuentas.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/cuentas.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/cuentas.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/cuentas.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/error.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/error.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/error.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/error.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/i18n.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/i18n.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/i18n.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/mock-data.service.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/mock-data.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/services/mock-data.service.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/services/mock-data.service.js",
+      "line": null
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": null
+    },
+    {
+      "source": "src/app/i18n/translate.filter.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/i18n/translate.filter.js",
+      "line": null
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": null
+    },
+    {
+      "source": "src/app/i18n/dni-validator.directive.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/error-banner/error-banner.component.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/error-banner/error-banner.component.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/footer/footer.component.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/footer/footer.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/footer/footer.component.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/footer/footer.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/header/header.component.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/header/header.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/header/header.component.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/header/header.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": null
+    },
+    {
+      "source": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": null
+    },
+    {
+      "source": "tests/test-helpers.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/test-helpers.js",
+      "line": null
+    },
+    {
+      "source": "tests/test-helpers.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/test-helpers.js",
+      "line": null
+    },
+    {
+      "source": "tests/i18n/dni-validator.directive.spec.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/i18n/dni-validator.directive.spec.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/api.service.spec.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/api.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/api.service.spec.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/api.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/config.service.spec.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/config.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/config.service.spec.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/config.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/i18n.service.spec.js",
+      "target": "src/assets/i18n/es-ES.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/i18n.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "tests/services/i18n.service.spec.js",
+      "target": "src/assets/i18n/en-EN.json",
+      "type": "USES_I18N",
+      "confidence": "medium",
+      "sources": [
+        "heuristic"
+      ],
+      "file": "tests/services/i18n.service.spec.js",
+      "line": null
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::app-container",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 114
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::app-main",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 120
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::container",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 125
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::stack",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 131
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::row",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 137
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::spacer",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 143
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::btn",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 151
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::btn--primary",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 170
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::btn--outlined-secondary",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 179
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::btn--small",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 189
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::field",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 198
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::label",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 205
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::input",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 211
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::input-error",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 230
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::input-success",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 234
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::card",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 242
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::card-header",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 254
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::card-title",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 260
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::card-body",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 265
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::card-footer",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 269
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::app-header",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 289
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::app-header-title",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 296
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::app-header-right",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 301
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::language-selector",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 307
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::error-banner",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 342
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::error-message",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 365
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::error-close",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 369
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::loading-spinner",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 384
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::spinner-size-sm",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 400
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::spinner-size-md",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 405
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::spinner-size-lg",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 410
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::validation-icon",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 457
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::validation-icon--success",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 463
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::validation-icon--error",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 467
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::text-center",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 475
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::text-right",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 479
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::mb-md",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 483
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::mb-lg",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 487
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::mt-md",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 491
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::mt-lg",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 495
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::d-flex",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 499
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::gap-md",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 503
+    },
+    {
+      "source": "src/styles/main.css",
+      "target": "style::gap-lg",
+      "type": "DEFINES_STYLE",
+      "confidence": "high",
+      "sources": [
+        "text-extract"
+      ],
+      "file": "src/styles/main.css",
+      "line": 507
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "config::endpoint::apiBaseUrl",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "config::endpoint::useMockApi",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "src/assets/config.json",
+      "target": "config::endpoint::useEndpointV2",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "src/assets/config.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "config::endpoint::scripts.start",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package.json",
+      "target": "config::endpoint::scripts.dev",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "package.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "config::endpoint::packages.node_modules/encodeurl",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "config::endpoint::packages.node_modules/parseurl",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    },
+    {
+      "source": "package-lock.json",
+      "target": "config::endpoint::packages.node_modules/url-join",
+      "type": "DEFINES_ENDPOINT",
+      "confidence": "high",
+      "sources": [
+        "json-parse"
+      ],
+      "file": "package-lock.json",
+      "line": 1
+    }
+  ]
+}

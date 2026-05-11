@@ -1,0 +1,34 @@
+{
+  "file": "src/app/services/mock-data.service.js",
+  "file_hash": "sha256:37b1c2bc43d6",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.580Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/services/mock-data.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/services/mock-data.service.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/services/mock-data.service.js::MockDataService:4",
+      "name": "MockDataService",
+      "kind": "angular_service",
+      "type": "service",
+      "file": "src/app/services/mock-data.service.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

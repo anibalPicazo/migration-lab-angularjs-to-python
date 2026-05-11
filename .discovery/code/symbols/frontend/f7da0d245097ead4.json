@@ -1,0 +1,34 @@
+{
+  "file": "tests/services/i18n.service.spec.js",
+  "file_hash": "sha256:0c8b95c00954",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.652Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "tests/services/i18n.service.spec.js::angular_run_line_8:8",
+      "name": "angular_run_line_8",
+      "kind": "angular_run",
+      "type": "run",
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 8,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "test"
+    },
+    {
+      "id": "tests/services/i18n.service.spec.js::angular_run_line_18:18",
+      "name": "angular_run_line_18",
+      "kind": "angular_run",
+      "type": "run",
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 18,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "test"
+    }
+  ]
+}

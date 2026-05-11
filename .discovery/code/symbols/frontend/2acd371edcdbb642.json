@@ -1,0 +1,56 @@
+{
+  "file": "src/app/i18n/dni-validator.directive.js",
+  "file_hash": "sha256:55b8e03d549c",
+  "language": "js",
+  "category": "i18n",
+  "parsed_at": "2026-05-08T12:00:53.587Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::angular_filter_line_44:44",
+      "name": "angular_filter_line_44",
+      "kind": "angular_filter",
+      "type": "filter",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 44,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::angular_directive_line_4:4",
+      "name": "angular_directive_line_4",
+      "kind": "angular_directive",
+      "type": "directive",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::isValidDni:9",
+      "name": "isValidDni",
+      "kind": "function",
+      "type": "function_declaration",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 9,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

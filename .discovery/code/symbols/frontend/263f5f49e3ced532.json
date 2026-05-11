@@ -1,0 +1,45 @@
+{
+  "file": "src/app/i18n/translate.filter.js",
+  "file_hash": "sha256:33f205ee5eed",
+  "language": "js",
+  "category": "i18n",
+  "parsed_at": "2026-05-08T12:00:53.583Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/i18n/translate.filter.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/i18n/translate.filter.js::angular_filter_line_4:4",
+      "name": "angular_filter_line_4",
+      "kind": "angular_filter",
+      "type": "filter",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/i18n/translate.filter.js::angular_directive_line_11:11",
+      "name": "angular_directive_line_11",
+      "kind": "angular_directive",
+      "type": "directive",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 11,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

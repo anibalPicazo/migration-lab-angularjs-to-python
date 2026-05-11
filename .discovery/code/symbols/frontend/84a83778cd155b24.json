@@ -1,0 +1,34 @@
+{
+  "file": "src/app/components/header/header.component.js",
+  "file_hash": "sha256:ad150dc215e3",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.599Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/components/header/header.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/components/header/header.component.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/components/header/header.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "type": "component",
+      "file": "src/app/components/header/header.component.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

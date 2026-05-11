@@ -1,0 +1,11 @@
+{
+  "file": "tests/i18n/translate.filter.spec.js",
+  "file_hash": "sha256:5e907578f632",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.625Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

@@ -1,0 +1,11 @@
+{
+  "file": "tests/services/error.service.spec.js",
+  "file_hash": "sha256:b513b2d0bc5d",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.647Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

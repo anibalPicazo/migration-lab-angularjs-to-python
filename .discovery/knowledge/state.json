@@ -1,0 +1,37 @@
+﻿[
+    {
+        "file":  "00-migration-requirements.md",
+        "hash":  "8D2EA11EA4A82004A6A66099C694E11EC86BAA0860848ADDCF241864CB605F7C",
+        "ingestedAt":  "2026-05-08T13:17:12.7443266+02:00"
+    },
+    {
+        "file":  "01-service-map.md",
+        "hash":  "1A02D793FB5F6B570C84F2BD038C86CC7AE4B622C3910F475DD3123FD632A673",
+        "ingestedAt":  "2026-05-08T13:17:12.7518399+02:00"
+    },
+    {
+        "file":  "02-tech-stack.md",
+        "hash":  "477CE9FA49BD9649ACED68C82AC3BD5F3109E9803ECCA835A46A3F010DC911F2",
+        "ingestedAt":  "2026-05-08T13:17:12.7578415+02:00"
+    },
+    {
+        "file":  "03-data-model.md",
+        "hash":  "B9A2F1C36C02303D2D3DE4B29E0085B4D9E020A409FB6F855C077BE8286EC05E",
+        "ingestedAt":  "2026-05-08T13:17:12.7608413+02:00"
+    },
+    {
+        "file":  "04-patterns.md",
+        "hash":  "E3D8E4F70D63D20A4CD31EF2D3A99BE9FE069F75DEC320FB984F5611D392DEF2",
+        "ingestedAt":  "2026-05-08T13:17:12.7638403+02:00"
+    },
+    {
+        "file":  "05-guardrails.md",
+        "hash":  "5D3E6CB515E030DD4D499240937F5F078B6851517DC932E7C78A7DD448CB0878",
+        "ingestedAt":  "2026-05-08T13:17:12.7658418+02:00"
+    },
+    {
+        "file":  "06-ui-design-system.md",
+        "hash":  "706951A66DB6C3D746A2CB17159A3A4F702C96DEEC69D547F217B0A16663C7DF",
+        "ingestedAt":  "2026-05-08T13:17:12.7688410+02:00"
+    }
+]

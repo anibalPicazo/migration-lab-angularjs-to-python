@@ -1,0 +1,11 @@
+{
+  "file": "karma.conf.js",
+  "file_hash": "sha256:5750471a0a8a",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.672Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

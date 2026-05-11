@@ -1,0 +1,45 @@
+{
+  "file": "tests/test-helpers.js",
+  "file_hash": "sha256:69641f5ce93b",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.612Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "tests/test-helpers.js::angular_run_line_6:6",
+      "name": "angular_run_line_6",
+      "kind": "angular_run",
+      "type": "run",
+      "file": "tests/test-helpers.js",
+      "line": 6,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "tests/test-helpers.js::angular_run_line_25:25",
+      "name": "angular_run_line_25",
+      "kind": "angular_run",
+      "type": "run",
+      "file": "tests/test-helpers.js",
+      "line": 25,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "tests/test-helpers.js::setupGlobalMocks:29",
+      "name": "setupGlobalMocks",
+      "kind": "function",
+      "type": "function_declaration",
+      "file": "tests/test-helpers.js",
+      "line": 29,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

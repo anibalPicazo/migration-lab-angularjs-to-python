@@ -1,0 +1,3398 @@
+{
+  "version": 2,
+  "generated_at": "2026-05-08T12:00:53.675Z",
+  "module_slug": "frontend",
+  "total_files": 37,
+  "total_symbols": 336,
+  "by_source": {
+    "regex-parse": 48,
+    "json-parse": 240,
+    "text-extract": 48
+  },
+  "by_language": {
+    "html": {
+      "files": 1,
+      "symbols": 5
+    },
+    "css": {
+      "files": 1,
+      "symbols": 43
+    },
+    "json": {
+      "files": 5,
+      "symbols": 240
+    },
+    "js": {
+      "files": 30,
+      "symbols": 48
+    }
+  },
+  "by_category": {
+    "html": 1,
+    "css": 1,
+    "json": 5,
+    "js": 30
+  },
+  "symbols": [
+    {
+      "id": "index.html::app-header:11",
+      "name": "app-header",
+      "kind": "angular_component_usage",
+      "file": "index.html",
+      "line": 11,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "index.html::app-error-banner:13",
+      "name": "app-error-banner",
+      "kind": "angular_component_usage",
+      "file": "index.html",
+      "line": 13,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "index.html::app-footer:16",
+      "name": "app-footer",
+      "kind": "angular_component_usage",
+      "file": "index.html",
+      "line": 16,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "index.html::ng-app:2",
+      "name": "ng-app",
+      "kind": "angular_directive",
+      "file": "index.html",
+      "line": 2,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "index.html::ui-view",
+      "name": "ui-view",
+      "kind": "router_outlet",
+      "file": "index.html",
+      "line": 14,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.app-container",
+      "name": "app-container",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 114,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.app-main",
+      "name": "app-main",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 120,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.container",
+      "name": "container",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 125,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.stack",
+      "name": "stack",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 131,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.row",
+      "name": "row",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 137,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.spacer",
+      "name": "spacer",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 143,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.btn",
+      "name": "btn",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 151,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.btn--primary",
+      "name": "btn--primary",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 170,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.btn--outlined-secondary",
+      "name": "btn--outlined-secondary",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 179,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.btn--small",
+      "name": "btn--small",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 189,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.field",
+      "name": "field",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 198,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.label",
+      "name": "label",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 205,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.input",
+      "name": "input",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 211,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.input-error",
+      "name": "input-error",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 230,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.input-success",
+      "name": "input-success",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 234,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.card",
+      "name": "card",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 242,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.card-header",
+      "name": "card-header",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 254,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.card-title",
+      "name": "card-title",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 260,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.card-body",
+      "name": "card-body",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 265,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.card-footer",
+      "name": "card-footer",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 269,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.app-header",
+      "name": "app-header",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 289,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.app-header-title",
+      "name": "app-header-title",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 296,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.app-header-right",
+      "name": "app-header-right",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 301,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.language-selector",
+      "name": "language-selector",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 307,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.error-banner",
+      "name": "error-banner",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 342,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.error-message",
+      "name": "error-message",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 365,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.error-close",
+      "name": "error-close",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 369,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.loading-spinner",
+      "name": "loading-spinner",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 384,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.spinner-size-sm",
+      "name": "spinner-size-sm",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 400,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.spinner-size-md",
+      "name": "spinner-size-md",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 405,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.spinner-size-lg",
+      "name": "spinner-size-lg",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 410,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.validation-icon",
+      "name": "validation-icon",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 457,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.validation-icon--success",
+      "name": "validation-icon--success",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 463,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.validation-icon--error",
+      "name": "validation-icon--error",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 467,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.text-center",
+      "name": "text-center",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 475,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.text-right",
+      "name": "text-right",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 479,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.mb-md",
+      "name": "mb-md",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 483,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.mb-lg",
+      "name": "mb-lg",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 487,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.mt-md",
+      "name": "mt-md",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 491,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.mt-lg",
+      "name": "mt-lg",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 495,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.d-flex",
+      "name": "d-flex",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 499,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.gap-md",
+      "name": "gap-md",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 503,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/styles/main.css::.gap-lg",
+      "name": "gap-lg",
+      "kind": "css_class",
+      "file": "src/styles/main.css",
+      "line": 507,
+      "category": "source",
+      "source": "text-extract",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::apiBaseUrl",
+      "name": "apiBaseUrl",
+      "kind": "endpoint_url",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::defaultLang",
+      "name": "defaultLang",
+      "kind": "config_entry",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::supportedLangs",
+      "name": "supportedLangs",
+      "kind": "config_entry",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::requestTimeoutMs",
+      "name": "requestTimeoutMs",
+      "kind": "config_entry",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::batchRequestTimeoutMs",
+      "name": "batchRequestTimeoutMs",
+      "kind": "config_entry",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::useMockApi",
+      "name": "useMockApi",
+      "kind": "endpoint_url",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/config.json::useEndpointV2",
+      "name": "useEndpointV2",
+      "kind": "endpoint_url",
+      "file": "src/assets/config.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::page_title",
+      "name": "page_title",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_dni",
+      "name": "label_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_results",
+      "name": "label_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_cuenta_id",
+      "name": "label_cuenta_id",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_nombre",
+      "name": "label_nombre",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::label_estado",
+      "name": "label_estado",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_search",
+      "name": "btn_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_new_search",
+      "name": "btn_new_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_consult_all",
+      "name": "btn_consult_all",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::btn_consult_selected",
+      "name": "btn_consult_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::help_dni",
+      "name": "help_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::no_results",
+      "name": "no_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_no_accounts_selected",
+      "name": "error_no_accounts_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_search",
+      "name": "error_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/es-ES.json::error_consult",
+      "name": "error_consult",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/es-ES.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::page_title",
+      "name": "page_title",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::label_dni",
+      "name": "label_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::label_results",
+      "name": "label_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::label_cuenta_id",
+      "name": "label_cuenta_id",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::label_nombre",
+      "name": "label_nombre",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::label_estado",
+      "name": "label_estado",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::btn_search",
+      "name": "btn_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::btn_new_search",
+      "name": "btn_new_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::btn_consult_all",
+      "name": "btn_consult_all",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::btn_consult_selected",
+      "name": "btn_consult_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::help_dni",
+      "name": "help_dni",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::no_results",
+      "name": "no_results",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::error_no_accounts_selected",
+      "name": "error_no_accounts_selected",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::error_search",
+      "name": "error_search",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/assets/i18n/en-EN.json::error_consult",
+      "name": "error_consult",
+      "kind": "i18n_key",
+      "file": "src/assets/i18n/en-EN.json",
+      "line": 1,
+      "category": "i18n",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/app.module.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/app.module.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/app.module.js::angular_run_line_4:4",
+      "name": "angular_run_line_4",
+      "kind": "angular_run",
+      "file": "src/app/app.module.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/config/app.config.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/config/app.config.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/config/app.config.js::angular_config_line_4:4",
+      "name": "angular_config_line_4",
+      "kind": "angular_config",
+      "file": "src/app/config/app.config.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/config/http.interceptor.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/config/http.interceptor.js::HttpErrorInterceptor:4",
+      "name": "HttpErrorInterceptor",
+      "kind": "angular_service",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/config/http.interceptor.js::angular_config_line_23:23",
+      "name": "angular_config_line_23",
+      "kind": "angular_config",
+      "file": "src/app/config/http.interceptor.js",
+      "line": 23,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/api.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/api.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/api.service.js::ApiService:4",
+      "name": "ApiService",
+      "kind": "angular_service",
+      "file": "src/app/services/api.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/config.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/config.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/config.service.js::ConfigService:4",
+      "name": "ConfigService",
+      "kind": "angular_service",
+      "file": "src/app/services/config.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/config.service.js::http:13",
+      "name": "src/assets/config.json",
+      "kind": "http_call",
+      "file": "src/app/services/config.service.js",
+      "line": 13,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/cuentas.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/cuentas.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/cuentas.service.js::CuentasService:4",
+      "name": "CuentasService",
+      "kind": "angular_service",
+      "file": "src/app/services/cuentas.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/error.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/error.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/error.service.js::ErrorService:4",
+      "name": "ErrorService",
+      "kind": "angular_service",
+      "file": "src/app/services/error.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/i18n.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/i18n.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/i18n.service.js::i18nService:4",
+      "name": "i18nService",
+      "kind": "angular_service",
+      "file": "src/app/services/i18n.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/i18n.service.js::http:34",
+      "name": "src/assets/i18n/",
+      "kind": "http_call",
+      "file": "src/app/services/i18n.service.js",
+      "line": 34,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/mock-data.service.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/services/mock-data.service.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/services/mock-data.service.js::MockDataService:4",
+      "name": "MockDataService",
+      "kind": "angular_service",
+      "file": "src/app/services/mock-data.service.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/translate.filter.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/translate.filter.js::angular_filter_line_4:4",
+      "name": "angular_filter_line_4",
+      "kind": "angular_filter",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/translate.filter.js::angular_directive_line_11:11",
+      "name": "angular_directive_line_11",
+      "kind": "angular_directive",
+      "file": "src/app/i18n/translate.filter.js",
+      "line": 11,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::angular_filter_line_44:44",
+      "name": "angular_filter_line_44",
+      "kind": "angular_filter",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 44,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::angular_directive_line_4:4",
+      "name": "angular_directive_line_4",
+      "kind": "angular_directive",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/i18n/dni-validator.directive.js::isValidDni:9",
+      "name": "isValidDni",
+      "kind": "function",
+      "file": "src/app/i18n/dni-validator.directive.js",
+      "line": 9,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/error-banner/error-banner.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/error-banner/error-banner.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "file": "src/app/components/error-banner/error-banner.component.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/footer/footer.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/components/footer/footer.component.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/footer/footer.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "file": "src/app/components/footer/footer.component.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/header/header.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/components/header/header.component.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/header/header.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "file": "src/app/components/header/header.component.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/loading-spinner/loading-spinner.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/components/loading-spinner/loading-spinner.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "file": "src/app/components/loading-spinner/loading-spinner.component.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": 3,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js::angular_component_line_4:4",
+      "name": "angular_component_line_4",
+      "kind": "angular_component",
+      "file": "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js",
+      "line": 4,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/test-helpers.js::angular_run_line_6:6",
+      "name": "angular_run_line_6",
+      "kind": "angular_run",
+      "file": "tests/test-helpers.js",
+      "line": 6,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/test-helpers.js::angular_run_line_25:25",
+      "name": "angular_run_line_25",
+      "kind": "angular_run",
+      "file": "tests/test-helpers.js",
+      "line": 25,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/test-helpers.js::setupGlobalMocks:29",
+      "name": "setupGlobalMocks",
+      "kind": "function",
+      "file": "tests/test-helpers.js",
+      "line": 29,
+      "category": "source",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/i18n/dni-validator.directive.spec.js::angular_controller_line_24:24",
+      "name": "angular_controller_line_24",
+      "kind": "angular_controller",
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 24,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/i18n/dni-validator.directive.spec.js::compileInput:19",
+      "name": "compileInput",
+      "kind": "function",
+      "file": "tests/i18n/dni-validator.directive.spec.js",
+      "line": 19,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/services/api.service.spec.js::angular_run_line_42:42",
+      "name": "angular_run_line_42",
+      "kind": "angular_run",
+      "file": "tests/services/api.service.spec.js",
+      "line": 42,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/services/config.service.spec.js::angular_run_line_11:11",
+      "name": "angular_run_line_11",
+      "kind": "angular_run",
+      "file": "tests/services/config.service.spec.js",
+      "line": 11,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/services/config.service.spec.js::angular_run_line_21:21",
+      "name": "angular_run_line_21",
+      "kind": "angular_run",
+      "file": "tests/services/config.service.spec.js",
+      "line": 21,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/services/i18n.service.spec.js::angular_run_line_8:8",
+      "name": "angular_run_line_8",
+      "kind": "angular_run",
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 8,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "tests/services/i18n.service.spec.js::angular_run_line_18:18",
+      "name": "angular_run_line_18",
+      "kind": "angular_run",
+      "file": "tests/services/i18n.service.spec.js",
+      "line": 18,
+      "category": "test",
+      "source": "regex-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::name",
+      "name": "name",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::version",
+      "name": "version",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::description",
+      "name": "description",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::main",
+      "name": "main",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::scripts.start",
+      "name": "scripts.start",
+      "kind": "endpoint_url",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::scripts.dev",
+      "name": "scripts.dev",
+      "kind": "endpoint_url",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::scripts.test",
+      "name": "scripts.test",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::scripts.test:watch",
+      "name": "scripts.test:watch",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::dependencies.@uirouter/angularjs",
+      "name": "dependencies.@uirouter/angularjs",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::dependencies.angular",
+      "name": "dependencies.angular",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.angular-mocks",
+      "name": "devDependencies.angular-mocks",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.http-server",
+      "name": "devDependencies.http-server",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.jasmine-core",
+      "name": "devDependencies.jasmine-core",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.karma",
+      "name": "devDependencies.karma",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.karma-chrome-launcher",
+      "name": "devDependencies.karma-chrome-launcher",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.karma-firefox-launcher",
+      "name": "devDependencies.karma-firefox-launcher",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package.json::devDependencies.karma-jasmine",
+      "name": "devDependencies.karma-jasmine",
+      "kind": "config_entry",
+      "file": "package.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::name",
+      "name": "name",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::version",
+      "name": "version",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::lockfileVersion",
+      "name": "lockfileVersion",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::requires",
+      "name": "requires",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.",
+      "name": "packages.",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@colors/colors",
+      "name": "packages.node_modules/@colors/colors",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@socket.io/component-emitter",
+      "name": "packages.node_modules/@socket.io/component-emitter",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@types/cors",
+      "name": "packages.node_modules/@types/cors",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@types/node",
+      "name": "packages.node_modules/@types/node",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@types/ws",
+      "name": "packages.node_modules/@types/ws",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@uirouter/angularjs",
+      "name": "packages.node_modules/@uirouter/angularjs",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/@uirouter/core",
+      "name": "packages.node_modules/@uirouter/core",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/accepts",
+      "name": "packages.node_modules/accepts",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/angular",
+      "name": "packages.node_modules/angular",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/angular-mocks",
+      "name": "packages.node_modules/angular-mocks",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ansi-regex",
+      "name": "packages.node_modules/ansi-regex",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ansi-styles",
+      "name": "packages.node_modules/ansi-styles",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/anymatch",
+      "name": "packages.node_modules/anymatch",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/async",
+      "name": "packages.node_modules/async",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/balanced-match",
+      "name": "packages.node_modules/balanced-match",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/base64id",
+      "name": "packages.node_modules/base64id",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/basic-auth",
+      "name": "packages.node_modules/basic-auth",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/basic-auth/node_modules/safe-buffer",
+      "name": "packages.node_modules/basic-auth/node_modules/safe-buffer",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/binary-extensions",
+      "name": "packages.node_modules/binary-extensions",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/body-parser",
+      "name": "packages.node_modules/body-parser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/body-parser/node_modules/debug",
+      "name": "packages.node_modules/body-parser/node_modules/debug",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/body-parser/node_modules/ms",
+      "name": "packages.node_modules/body-parser/node_modules/ms",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/brace-expansion",
+      "name": "packages.node_modules/brace-expansion",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/braces",
+      "name": "packages.node_modules/braces",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/bytes",
+      "name": "packages.node_modules/bytes",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/call-bind-apply-helpers",
+      "name": "packages.node_modules/call-bind-apply-helpers",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/call-bound",
+      "name": "packages.node_modules/call-bound",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/chalk",
+      "name": "packages.node_modules/chalk",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/chokidar",
+      "name": "packages.node_modules/chokidar",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/cliui",
+      "name": "packages.node_modules/cliui",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/color-convert",
+      "name": "packages.node_modules/color-convert",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/color-name",
+      "name": "packages.node_modules/color-name",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/concat-map",
+      "name": "packages.node_modules/concat-map",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/connect",
+      "name": "packages.node_modules/connect",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/connect/node_modules/debug",
+      "name": "packages.node_modules/connect/node_modules/debug",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/connect/node_modules/ms",
+      "name": "packages.node_modules/connect/node_modules/ms",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/content-type",
+      "name": "packages.node_modules/content-type",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/cookie",
+      "name": "packages.node_modules/cookie",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/cors",
+      "name": "packages.node_modules/cors",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/corser",
+      "name": "packages.node_modules/corser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/custom-event",
+      "name": "packages.node_modules/custom-event",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/date-format",
+      "name": "packages.node_modules/date-format",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/debug",
+      "name": "packages.node_modules/debug",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/depd",
+      "name": "packages.node_modules/depd",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/destroy",
+      "name": "packages.node_modules/destroy",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/di",
+      "name": "packages.node_modules/di",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/dom-serialize",
+      "name": "packages.node_modules/dom-serialize",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/dunder-proto",
+      "name": "packages.node_modules/dunder-proto",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ee-first",
+      "name": "packages.node_modules/ee-first",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/emoji-regex",
+      "name": "packages.node_modules/emoji-regex",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/encodeurl",
+      "name": "packages.node_modules/encodeurl",
+      "kind": "endpoint_url",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/engine.io",
+      "name": "packages.node_modules/engine.io",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/engine.io-parser",
+      "name": "packages.node_modules/engine.io-parser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ent",
+      "name": "packages.node_modules/ent",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/es-define-property",
+      "name": "packages.node_modules/es-define-property",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/es-errors",
+      "name": "packages.node_modules/es-errors",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/es-object-atoms",
+      "name": "packages.node_modules/es-object-atoms",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/escalade",
+      "name": "packages.node_modules/escalade",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/escape-html",
+      "name": "packages.node_modules/escape-html",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/eventemitter3",
+      "name": "packages.node_modules/eventemitter3",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/extend",
+      "name": "packages.node_modules/extend",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/fill-range",
+      "name": "packages.node_modules/fill-range",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/finalhandler",
+      "name": "packages.node_modules/finalhandler",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/finalhandler/node_modules/debug",
+      "name": "packages.node_modules/finalhandler/node_modules/debug",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/finalhandler/node_modules/ms",
+      "name": "packages.node_modules/finalhandler/node_modules/ms",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/finalhandler/node_modules/on-finished",
+      "name": "packages.node_modules/finalhandler/node_modules/on-finished",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/flatted",
+      "name": "packages.node_modules/flatted",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/follow-redirects",
+      "name": "packages.node_modules/follow-redirects",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/fs-extra",
+      "name": "packages.node_modules/fs-extra",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/fs.realpath",
+      "name": "packages.node_modules/fs.realpath",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/fsevents",
+      "name": "packages.node_modules/fsevents",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/function-bind",
+      "name": "packages.node_modules/function-bind",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/get-caller-file",
+      "name": "packages.node_modules/get-caller-file",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/get-intrinsic",
+      "name": "packages.node_modules/get-intrinsic",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/get-proto",
+      "name": "packages.node_modules/get-proto",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/glob",
+      "name": "packages.node_modules/glob",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/glob-parent",
+      "name": "packages.node_modules/glob-parent",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/gopd",
+      "name": "packages.node_modules/gopd",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/graceful-fs",
+      "name": "packages.node_modules/graceful-fs",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/has-flag",
+      "name": "packages.node_modules/has-flag",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/has-symbols",
+      "name": "packages.node_modules/has-symbols",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/has-tostringtag",
+      "name": "packages.node_modules/has-tostringtag",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/hasown",
+      "name": "packages.node_modules/hasown",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/he",
+      "name": "packages.node_modules/he",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/html-encoding-sniffer",
+      "name": "packages.node_modules/html-encoding-sniffer",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/http-errors",
+      "name": "packages.node_modules/http-errors",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/http-errors/node_modules/statuses",
+      "name": "packages.node_modules/http-errors/node_modules/statuses",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/http-proxy",
+      "name": "packages.node_modules/http-proxy",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/http-server",
+      "name": "packages.node_modules/http-server",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/http-server/node_modules/mime",
+      "name": "packages.node_modules/http-server/node_modules/mime",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/iconv-lite",
+      "name": "packages.node_modules/iconv-lite",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/inflight",
+      "name": "packages.node_modules/inflight",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/inherits",
+      "name": "packages.node_modules/inherits",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-binary-path",
+      "name": "packages.node_modules/is-binary-path",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-docker",
+      "name": "packages.node_modules/is-docker",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-extglob",
+      "name": "packages.node_modules/is-extglob",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-fullwidth-code-point",
+      "name": "packages.node_modules/is-fullwidth-code-point",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-glob",
+      "name": "packages.node_modules/is-glob",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-number",
+      "name": "packages.node_modules/is-number",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-regex",
+      "name": "packages.node_modules/is-regex",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/is-wsl",
+      "name": "packages.node_modules/is-wsl",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/isbinaryfile",
+      "name": "packages.node_modules/isbinaryfile",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/isexe",
+      "name": "packages.node_modules/isexe",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/jasmine-core",
+      "name": "packages.node_modules/jasmine-core",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/jsonfile",
+      "name": "packages.node_modules/jsonfile",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/karma",
+      "name": "packages.node_modules/karma",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/karma-chrome-launcher",
+      "name": "packages.node_modules/karma-chrome-launcher",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/karma-firefox-launcher",
+      "name": "packages.node_modules/karma-firefox-launcher",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/karma-firefox-launcher/node_modules/which",
+      "name": "packages.node_modules/karma-firefox-launcher/node_modules/which",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/karma-jasmine",
+      "name": "packages.node_modules/karma-jasmine",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/lodash",
+      "name": "packages.node_modules/lodash",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/log4js",
+      "name": "packages.node_modules/log4js",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/math-intrinsics",
+      "name": "packages.node_modules/math-intrinsics",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/media-typer",
+      "name": "packages.node_modules/media-typer",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/mime",
+      "name": "packages.node_modules/mime",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/mime-db",
+      "name": "packages.node_modules/mime-db",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/mime-types",
+      "name": "packages.node_modules/mime-types",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/minimatch",
+      "name": "packages.node_modules/minimatch",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/minimist",
+      "name": "packages.node_modules/minimist",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/mkdirp",
+      "name": "packages.node_modules/mkdirp",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ms",
+      "name": "packages.node_modules/ms",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/negotiator",
+      "name": "packages.node_modules/negotiator",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/normalize-path",
+      "name": "packages.node_modules/normalize-path",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/object-assign",
+      "name": "packages.node_modules/object-assign",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/object-inspect",
+      "name": "packages.node_modules/object-inspect",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/on-finished",
+      "name": "packages.node_modules/on-finished",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/once",
+      "name": "packages.node_modules/once",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/opener",
+      "name": "packages.node_modules/opener",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/parseurl",
+      "name": "packages.node_modules/parseurl",
+      "kind": "endpoint_url",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/path-is-absolute",
+      "name": "packages.node_modules/path-is-absolute",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/picomatch",
+      "name": "packages.node_modules/picomatch",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/portfinder",
+      "name": "packages.node_modules/portfinder",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/punycode",
+      "name": "packages.node_modules/punycode",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/qjobs",
+      "name": "packages.node_modules/qjobs",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/qs",
+      "name": "packages.node_modules/qs",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/range-parser",
+      "name": "packages.node_modules/range-parser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/raw-body",
+      "name": "packages.node_modules/raw-body",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/readdirp",
+      "name": "packages.node_modules/readdirp",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/require-directory",
+      "name": "packages.node_modules/require-directory",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/requires-port",
+      "name": "packages.node_modules/requires-port",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/rfdc",
+      "name": "packages.node_modules/rfdc",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/rimraf",
+      "name": "packages.node_modules/rimraf",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/safe-regex-test",
+      "name": "packages.node_modules/safe-regex-test",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/safer-buffer",
+      "name": "packages.node_modules/safer-buffer",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/secure-compare",
+      "name": "packages.node_modules/secure-compare",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/setprototypeof",
+      "name": "packages.node_modules/setprototypeof",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/side-channel",
+      "name": "packages.node_modules/side-channel",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/side-channel-list",
+      "name": "packages.node_modules/side-channel-list",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/side-channel-map",
+      "name": "packages.node_modules/side-channel-map",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/side-channel-weakmap",
+      "name": "packages.node_modules/side-channel-weakmap",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/socket.io",
+      "name": "packages.node_modules/socket.io",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/socket.io-adapter",
+      "name": "packages.node_modules/socket.io-adapter",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/socket.io-parser",
+      "name": "packages.node_modules/socket.io-parser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/source-map",
+      "name": "packages.node_modules/source-map",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/statuses",
+      "name": "packages.node_modules/statuses",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/streamroller",
+      "name": "packages.node_modules/streamroller",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/string-width",
+      "name": "packages.node_modules/string-width",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/strip-ansi",
+      "name": "packages.node_modules/strip-ansi",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/supports-color",
+      "name": "packages.node_modules/supports-color",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/tmp",
+      "name": "packages.node_modules/tmp",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/to-regex-range",
+      "name": "packages.node_modules/to-regex-range",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/toidentifier",
+      "name": "packages.node_modules/toidentifier",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/type-is",
+      "name": "packages.node_modules/type-is",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ua-parser-js",
+      "name": "packages.node_modules/ua-parser-js",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/undici-types",
+      "name": "packages.node_modules/undici-types",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/union",
+      "name": "packages.node_modules/union",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/universalify",
+      "name": "packages.node_modules/universalify",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/unpipe",
+      "name": "packages.node_modules/unpipe",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/url-join",
+      "name": "packages.node_modules/url-join",
+      "kind": "endpoint_url",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/utils-merge",
+      "name": "packages.node_modules/utils-merge",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/vary",
+      "name": "packages.node_modules/vary",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/void-elements",
+      "name": "packages.node_modules/void-elements",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/whatwg-encoding",
+      "name": "packages.node_modules/whatwg-encoding",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/whatwg-encoding/node_modules/iconv-lite",
+      "name": "packages.node_modules/whatwg-encoding/node_modules/iconv-lite",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/which",
+      "name": "packages.node_modules/which",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/wrap-ansi",
+      "name": "packages.node_modules/wrap-ansi",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/wrappy",
+      "name": "packages.node_modules/wrappy",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/ws",
+      "name": "packages.node_modules/ws",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/y18n",
+      "name": "packages.node_modules/y18n",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/yargs",
+      "name": "packages.node_modules/yargs",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    },
+    {
+      "id": "package-lock.json::packages.node_modules/yargs-parser",
+      "name": "packages.node_modules/yargs-parser",
+      "kind": "config_entry",
+      "file": "package-lock.json",
+      "line": 1,
+      "category": "config",
+      "source": "json-parse",
+      "confidence": "high"
+    }
+  ]
+}

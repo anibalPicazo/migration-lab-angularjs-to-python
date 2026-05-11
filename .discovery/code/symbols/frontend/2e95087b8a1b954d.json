@@ -1,0 +1,11 @@
+{
+  "file": "tests/components/footer.component.spec.js",
+  "file_hash": "sha256:6015ef46eb11",
+  "language": "js",
+  "category": "test",
+  "parsed_at": "2026-05-08T12:00:53.615Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": []
+}

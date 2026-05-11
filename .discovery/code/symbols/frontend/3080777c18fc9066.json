@@ -1,0 +1,34 @@
+{
+  "file": "src/app/app.module.js",
+  "file_hash": "sha256:8152acf960d9",
+  "language": "js",
+  "category": "source",
+  "parsed_at": "2026-05-08T12:00:53.556Z",
+  "parser": {
+    "primary": "regex-parse"
+  },
+  "symbols": [
+    {
+      "id": "src/app/app.module.js::appModule",
+      "name": "appModule",
+      "kind": "angular_module",
+      "type": "module",
+      "file": "src/app/app.module.js",
+      "line": 3,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    },
+    {
+      "id": "src/app/app.module.js::angular_run_line_4:4",
+      "name": "angular_run_line_4",
+      "kind": "angular_run",
+      "type": "run",
+      "file": "src/app/app.module.js",
+      "line": 4,
+      "confidence": "high",
+      "source": "regex-parse",
+      "category": "source"
+    }
+  ]
+}

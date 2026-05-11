@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "modules": {
+    "frontend": {
+      "slug": "frontend",
+      "name": "Frontend Application",
+      "description": "AngularJS 1.7.x SPA for account statement queries",
+      "root": "vault/input/src/frontend",
+      "scanned_at": "2026-05-08T00:00:00.000Z",
+      "scan_manifest": ".discovery/code/scans/frontend/scan-manifest.json",
+      "pipeline_status": {
+        "scan": "completed",
+        "extract_symbols": "never",
+        "build_graph": "never",
+        "synthesize": "never"
+      }
+    }
+  }
+}

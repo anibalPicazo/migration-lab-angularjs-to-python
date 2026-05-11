@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "current_module": "frontend",
+  "pipeline": {
+    "scan": {
+      "status": "completed",
+      "completed_at": "2026-05-08T00:00:00.000Z",
+      "root": "vault/input/src/frontend",
+      "slug": "frontend"
+    },
+    "extract_symbols": {
+      "status": "completed",
+      "completed_at": "2026-05-08T12:00:53.681Z",
+      "total_files": 37,
+      "total_symbols": 336
+    },
+    "build_graph": {
+      "status": "completed",
+      "completed_at": "2026-05-08T12:02:19.923Z",
+      "total_edges": 452,
+      "by_type": {
+        "CONTAINS": 331,
+        "TESTS": 4,
+        "REGISTERS": 19,
+        "CALLS_API": 2,
+        "USES_ROUTER": 1,
+        "USES_I18N": 44,
+        "DEFINES_STYLE": 43,
+        "DEFINES_ENDPOINT": 8
+      }
+    },
+    "synthesize": {
+      "status": "completed",
+      "completed_at": "2026-05-11T00:00:00.000Z",
+      "documents_written": 5,
+      "documents": [
+        "service-map.md",
+        "data-model.md",
+        "api-contracts.md",
+        "framework-api-registry.md",
+        "coding-conventions.md (merged)"
+      ]
+    }
+  },
+  "file_hashes": {
+    "index.html": "6b52d4a20989",
+    "src/styles/main.css": "d7ba392cc4a8",
+    "src/assets/config.json": "40490d724a7e",
+    "src/assets/i18n/es-ES.json": "b06433a86e6a",
+    "src/assets/i18n/en-EN.json": "352b3b232390",
+    "src/app/app.module.js": "8152acf960d9",
+    "src/app/config/app.config.js": "29282b0554c8",
+    "src/app/config/http.interceptor.js": "3caaecbaa2d7",
+    "src/app/services/api.service.js": "6dc7597118bf",
+    "src/app/services/config.service.js": "6300ba2931b4",
+    "src/app/services/cuentas.service.js": "f6428283cca5",
+    "src/app/services/error.service.js": "ef3d288c2173",
+    "src/app/services/i18n.service.js": "8cfecd0933a2",
+    "src/app/services/mock-data.service.js": "37b1c2bc43d6",
+    "src/app/i18n/translate.filter.js": "33f205ee5eed",
+    "src/app/i18n/dni-validator.directive.js": "55b8e03d549c",
+    "src/app/components/error-banner/error-banner.component.js": "8bff86a88e1b",
+    "src/app/components/footer/footer.component.js": "cb7ee651be28",
+    "src/app/components/header/header.component.js": "ad150dc215e3",
+    "src/app/components/loading-spinner/loading-spinner.component.js": "0195307f4b42",
+    "src/app/pages/consulta-estados-cuentas/consulta-estados-cuentas.component.js": "f74dbeafc9f1",
+    "tests/test-helpers.js": "69641f5ce93b",
+    "tests/components/footer.component.spec.js": "6015ef46eb11",
+    "tests/components/header.component.spec.js": "2f3a21ffd06d",
+    "tests/i18n/dni-validator.directive.spec.js": "80a3933dc0b9",
+    "tests/i18n/translate.filter.spec.js": "5e907578f632",
+    "tests/integration/consulta-estados-cuentas.e2e.spec.js": "154758a9abac",
+    "tests/pages/consulta-estados-cuentas.component.spec.js": "e342d418ec15",
+    "tests/services/api.service.spec.js": "f85e8f3d75d2",
+    "tests/services/config.service.spec.js": "60d63870d2d7",
+    "tests/services/cuentas.service.spec.js": "d765dac74f01",
+    "tests/services/error.service.spec.js": "b513b2d0bc5d",
+    "tests/services/i18n.service.spec.js": "0c8b95c00954",
+    "tests/services/mock-data.service.spec.js": "6b19c2070959",
+    "package.json": "ce80a2b4772e",
+    "package-lock.json": "97707db0805e",
+    "karma.conf.js": "5750471a0a8a"
+  }
+}
