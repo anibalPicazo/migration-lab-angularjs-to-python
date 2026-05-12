@@ -1,0 +1,78 @@
+# English translations for Account Query Application
+# Copyright (C) 2026
+# This file is distributed under the same license as the project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-11 18:00+0000\n"
+"PO-Revision-Date: 2026-05-11 18:00+0000\n"
+"Last-Translator: \n"
+"Language: en_EN\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Manual\n"
+
+# Header translations
+msgid "page_title"
+msgstr "Account Status Inquiry"
+
+msgid "language_selector_label"
+msgstr "Language"
+
+msgid "locale_es_ES"
+msgstr "Spanish"
+
+msgid "locale_en_EN"
+msgstr "English"
+
+# Form labels (from existing AngularJS translations)
+msgid "label_dni"
+msgstr "DNI"
+
+msgid "label_results"
+msgstr "Search Results"
+
+msgid "label_cuenta_id"
+msgstr "Account ID"
+
+msgid "label_nombre"
+msgstr "Name"
+
+msgid "label_estado"
+msgstr "Status"
+
+# Buttons
+msgid "btn_search"
+msgstr "Search"
+
+msgid "btn_new_search"
+msgstr "New Search"
+
+msgid "btn_consult_all"
+msgstr "Consult All"
+
+msgid "btn_consult_selected"
+msgstr "Consult Selected"
+
+# Help text
+msgid "help_dni"
+msgstr "Enter a valid DNI (8 digits + 1 letter)"
+
+# Messages
+msgid "no_results"
+msgstr "No results found"
+
+# Errors
+msgid "error_no_accounts_selected"
+msgstr "You must select at least one account"
+
+msgid "error_search"
+msgstr "Error during search"
+
+msgid "error_consult"
+msgstr "Error consulting accounts"

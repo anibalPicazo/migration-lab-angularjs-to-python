@@ -56,7 +56,4 @@ class MockDataService:
         Returns:
             List of EstadoCuenta objects
         """
-        return [
-            EstadoCuenta(id=acc_id, estado=self.MOCK_STATUSES.get(acc_id, "DESCONOCIDO"))
-            for acc_id in account_ids
-        ]
+        return [EstadoCuenta(id=acc_id, estado=self.MOCK_STATUSES.get(acc_id, "DESCONOCIDO")) for acc_id in account_ids]

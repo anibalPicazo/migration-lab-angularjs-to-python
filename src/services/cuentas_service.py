@@ -7,7 +7,7 @@ import httpx
 from pydantic import ValidationError
 
 from src.config import AppConfig
-from src.models.consulta import Cuenta, ConsultarEstadosRequest, EstadoCuenta
+from src.models.consulta import ConsultarEstadosRequest, Cuenta, EstadoCuenta
 from src.services.exceptions import (
     BackendDataError,
     BackendServerError,
