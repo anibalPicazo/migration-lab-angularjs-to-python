@@ -1,7 +1,11 @@
 ---
-version: "1.0"
+version: "1.1"
 generated_at: "2026-05-08T13:17:00Z"
+last_updated: "2026-05-12T14:30:00Z"
 source: discovery-knowledge
+changelog: |
+  1.1 (2026-05-12): Added Session Cookie Management guardrail from navigation-header-i18n
+  1.0 (2026-05-08): Initial version from discovery-knowledge
 ---
 
 # Architectural Guardrails
@@ -97,6 +101,40 @@ Purpose: Non-negotiable principles and constraints for the Python FastAPI migrat
 ```bash
 # Check for untyped endpoints
 ruff check --select ANN # Missing type annotations
+```
+
+### Session Cookie Management
+
+**Requirement**: All session cookies MUST use secure attributes to prevent XSS and CSRF attacks.  
+**Source**: navigation-header-i18n implementation
+
+✅ **CORRECT**:
+```python
+response.set_cookie(
+    key="preference",
+    value=value,
+    max_age=604800,      # 7 days in seconds
+    httponly=True,       # Prevents JavaScript access (XSS protection)
+    samesite="lax",      # Prevents CSRF while allowing navigation
+    secure=False,        # Set to True in production with HTTPS
+)
+```
+
+❌ **WRONG**: Missing security attributes
+```python
+response.set_cookie("preference", value)  # ❌ No httponly, samesite, max_age
+```
+
+**Required attributes**:
+- `httponly=True` — Prevents client-side JavaScript access (XSS mitigation)
+- `samesite="lax"` — Prevents CSRF attacks while allowing same-site navigation
+- `max_age` — Explicit expiry (e.g., 604800 for 7 days)
+- `secure=True` — HTTPS-only (set via config for production)
+
+**Detection**:
+```bash
+# Check for cookie usage without secure attributes
+grep -rn "set_cookie" src/routes/ | grep -v "httponly" | grep -v "samesite"
 ```
 
 ## Testing Guardrails

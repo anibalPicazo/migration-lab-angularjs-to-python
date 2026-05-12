@@ -1,7 +1,11 @@
 ---
-version: "1.0"
+version: "1.1"
 generated_at: 2026-05-11T00:00:00.000Z
+last_updated: 2026-05-12T14:30:00.000Z
 source: discovery-code
+changelog: |
+  1.1 (2026-05-12): Added Python Backend APIs section with Babel/gettext i18n pattern from navigation-header-i18n
+  1.0 (2026-05-11): Initial version with AngularJS APIs
 ---
 
 # Framework API Registry
@@ -378,6 +382,91 @@ No package-level corrections detected. All imports use correct package names for
 |---|---|
 | Custom directive validation | Pydantic field validators |
 | `dniValidator` directive | `@field_validator('dni')` in Pydantic model |
+
+---
+
+## Python Backend APIs
+
+### Babel/gettext i18n
+
+**Library**: Babel ≥2.13.0  
+**Purpose**: Server-side internationalization with gettext message catalogs  
+**Source**: navigation-header-i18n implementation
+
+#### Translation Loading Pattern
+
+**Correct Pattern:**
+```python
+import gettext
+from pathlib import Path
+
+translations = {}
+LOCALES_DIR = Path(__file__).parent / "locales"
+
+for locale in config.supported_locales:
+    translations[locale] = gettext.translation(
+        "messages",
+        localedir=str(LOCALES_DIR),
+        languages=[locale],
+    )
+
+def get_translation(locale: str) -> gettext.NullTranslations:
+    return translations.get(locale, translations.get(config.default_locale))
+```
+
+**Why**: Load all translations once at startup. Retrieve per-request based on user locale.
+
+❌ **Wrong Pattern**: Loading translations on every request
+```python
+def get_translation(locale: str):
+    return gettext.translation("messages", localedir="...", languages=[locale])  # ❌ I/O on every request
+```
+
+#### Per-Request Locale Pattern
+
+**Correct Pattern:**
+```python
+# In template context builder
+def get_template_context(request: Request, extra_context: Optional[dict] = None) -> dict:
+    locale = getattr(request.state, "locale", config.default_locale)
+    trans = get_translation(locale)
+    
+    context = {
+        "current_locale": locale,
+        "_": trans.gettext,  # Translation function
+    }
+    
+    if extra_context:
+        context.update(extra_context)
+    
+    return context
+```
+
+**Why**: Injects locale-specific translation function into every template render.
+
+#### Template Usage
+
+**Correct Pattern:**
+```jinja2
+<div class="title">{{ _('page_title') }}</div>
+<p>{{ _('welcome_message') }}</p>
+```
+
+**Why**: Uses injected `_()` function to translate keys.
+
+❌ **Wrong Pattern**: Hardcoded strings
+```jinja2
+<div class="title">Account Query</div>  <!-- ❌ Not translatable -->
+```
+
+#### Translation File Compilation
+
+**Command**: `pybabel compile -d src/locales -D messages`
+
+**Input**: `src/locales/{locale}/LC_MESSAGES/messages.po`  
+**Output**: `src/locales/{locale}/LC_MESSAGES/messages.mo` (binary, loaded by gettext)
+
+**Why**: gettext requires compiled .mo files. .po files are human-readable source.
 
 ---
 

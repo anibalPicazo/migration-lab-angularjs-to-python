@@ -1,7 +1,11 @@
 ---
-version: "1.0"
+version: "1.1"
 generated_at: "2026-05-08T13:17:00Z"
+last_updated: "2026-05-12T14:30:00Z"
 source: discovery-knowledge
+changelog: |
+  1.1 (2026-05-12): Added template_utils.py to structure and Template Context Pattern from navigation-header-i18n
+  1.0 (2026-05-08): Initial version from discovery-knowledge
 ---
 
 # Coding Conventions
@@ -68,6 +72,7 @@ app/
   utils/                     # Static utility functions
     __init__.py
     validators.py            # validate_dni(), format_date()
+  template_utils.py          # Shared template context builder
 
 tests/
   __init__.py
@@ -243,6 +248,53 @@ def submit_query(
 @app.post("/api/query")
 def submit_query(request: dict):
     pass
+```
+
+### Template Context Pattern
+
+**Pattern**: Centralized template context builder with locale-aware translations  
+**Source**: navigation-header-i18n implementation
+
+✅ **CORRECT**:
+```python
+# src/template_utils.py
+from fastapi import Request
+from fastapi.templating import Jinja2Templates
+
+templates = Jinja2Templates(directory="src/templates")
+
+def get_template_context(request: Request, extra_context: Optional[dict] = None) -> dict:
+    """Build template context with request-scoped globals."""
+    locale = getattr(request.state, "locale", config.default_locale)
+    trans = get_translation(locale)
+    
+    context = {
+        "current_locale": locale,
+        "_": trans.gettext,  # Translation function
+    }
+    
+    if extra_context:
+        context.update(extra_context)
+    
+    return context
+
+# Route usage
+@router.get("/page")
+def page(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="page.html",
+        context=get_template_context(request, {"data": value}),
+    )
+```
+
+❌ **WRONG**: Creating separate Jinja2Templates instances per route
+```python
+# Each route creates its own templates instance
+templates = Jinja2Templates(directory="src/templates")  # ❌ Duplicated
+```
+
+**Why**: Ensures consistent globals (locale, translation function) across all templates. Centralizes template configuration.
 ```
 
 ### Pydantic model patterns
