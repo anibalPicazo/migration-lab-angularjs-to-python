@@ -23,8 +23,7 @@ class TestHeaderRendering:
         response = client.get("/consulta-estados-cuentas")
 
         assert response.status_code == 200
-        assert "page_title" in response.text  # Placeholder for now
-        # When Babel is fully configured: assert "Consulta Estados Cuenta" in response.text
+        assert "Consulta Estados Cuenta" in response.text
 
     def test_header_renders_title_en(self, client):
         """Header displays English title when locale is en_EN."""
@@ -34,8 +33,7 @@ class TestHeaderRendering:
         response = client.get("/consulta-estados-cuentas")
 
         assert response.status_code == 200
-        assert "page_title" in response.text  # Placeholder for now
-        # When Babel is fully configured: assert "Account Status Inquiry" in response.text
+        assert "Account Status Inquiry" in response.text
 
     def test_header_language_selector_selected(self, client):
         """Language selector shows current locale as selected."""
@@ -46,7 +44,7 @@ class TestHeaderRendering:
 
         assert response.status_code == 200
         # Check that select element exists
-        assert '<select' in response.text
+        assert "<select" in response.text
         assert 'class="language-selector"' in response.text
 
     def test_base_template_includes_header(self, client):
@@ -55,7 +53,7 @@ class TestHeaderRendering:
 
         assert response.status_code == 200
         # Check header element exists
-        assert '<header' in response.text
+        assert "<header" in response.text
         assert 'class="app-header"' in response.text
 
     def test_header_displays_on_all_pages(self, client):
@@ -63,7 +61,7 @@ class TestHeaderRendering:
         # Test main page
         response = client.get("/consulta-estados-cuentas")
         assert response.status_code == 200
-        assert '<header' in response.text
+        assert "<header" in response.text
 
         # Test health endpoint (doesn't use templates, but verifies routing)
         response = client.get("/health")

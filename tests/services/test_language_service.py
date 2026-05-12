@@ -84,9 +84,7 @@ class TestParseAcceptLanguage:
 
     def test_parse_accept_language_header(self, language_service):
         """Parse complex Accept-Language header."""
-        result = language_service.parse_accept_language(
-            "en-US,en;q=0.9,es;q=0.8"
-        )
+        result = language_service.parse_accept_language("en-US,en;q=0.9,es;q=0.8")
         assert result == ["en-US", "en", "es"]
 
     def test_parse_accept_language_single(self, language_service):
@@ -96,9 +94,7 @@ class TestParseAcceptLanguage:
 
     def test_parse_accept_language_with_spaces(self, language_service):
         """Parse header with extra spaces."""
-        result = language_service.parse_accept_language(
-            "en-US , en;q=0.9 , es;q=0.8"
-        )
+        result = language_service.parse_accept_language("en-US , en;q=0.9 , es;q=0.8")
         assert result == ["en-US", "en", "es"]
 
     def test_parse_accept_language_empty(self, language_service):

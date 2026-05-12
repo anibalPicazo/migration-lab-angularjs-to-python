@@ -43,6 +43,6 @@ content = """<header class="app-header">
 """
 
 file_path = pathlib.Path("src/templates/components/header.html")
-file_path.write_text(content, encoding='utf-8')
+file_path.write_text(content, encoding="utf-8")
 print(f"File written successfully to {file_path}")
 print(f"Content length: {len(content)} characters")

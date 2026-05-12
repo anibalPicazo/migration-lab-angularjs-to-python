@@ -1,7 +1,5 @@
 """Integration tests for consulta estados cuentas routes."""
 
-import pytest
-
 
 class TestConsultaEstadosCuentasRoutes:
     """Test suite for consulta estados cuentas endpoints."""
@@ -11,7 +9,7 @@ class TestConsultaEstadosCuentasRoutes:
         response = client.get("/consulta-estados-cuentas")
 
         assert response.status_code == 200
-        assert b"Consulta Estados de Cuentas" in response.content
+        assert b"Consulta Estados Cuenta" in response.content  # Translated header title
         assert b'name="dni"' in response.content
         assert b"Buscar" in response.content
 

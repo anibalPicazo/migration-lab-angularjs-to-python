@@ -1,7 +1,5 @@
 """Unit tests for DNI validation."""
 
-import pytest
-
 from src.utils.validators import validate_dni
 
 

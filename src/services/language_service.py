@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class LanguageService:
     """Service for detecting and managing user language preferences."""
 
-    def __init__(self, config: AppConfig):
+    def __init__(self, config: AppConfig) -> None:
         """Initialize language service with configuration.
 
         Args:

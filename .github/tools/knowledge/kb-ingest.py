@@ -6,10 +6,11 @@ Tags: AS-IS (legacy/source technology) | TO-BE (target technology)
 """
 
 from __future__ import annotations
+
 import argparse
 import hashlib
-import os
 import json
+import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -39,6 +40,7 @@ NOW = datetime.now().isoformat()
 
 
 # ─── Helpers ───────────────────────────────────────────────────────────────────
+
 
 def slugify(name: str) -> str:
     name = os.path.splitext(name)[0]
@@ -158,8 +160,7 @@ def build_registry(input_base: Path, kb_base: Path) -> dict:
         "output_base": str(kb_base),
         "documents": documents,
         "by_classification": {
-            classification: sorted(paths)
-            for classification, paths in sorted(by_classification.items())
+            classification: sorted(paths) for classification, paths in sorted(by_classification.items())
         },
     }
 
@@ -226,6 +227,7 @@ def outputs_exist(kb_base: Path, outputs: list[str]) -> bool:
 
 # ─── PDF ───────────────────────────────────────────────────────────────────────
 
+
 def convert_pdf(input_path: Path, rel_path: str) -> list:
     import pdfplumber
 
@@ -237,8 +239,7 @@ def convert_pdf(input_path: Path, rel_path: str) -> list:
 
     with pdfplumber.open(str(input_path)) as pdf:
         n_pages = len(pdf.pages)
-        md_lines.append(build_frontmatter(str(input_path), tag_info,
-                                          {"pages": n_pages, "format": "PDF"}))
+        md_lines.append(build_frontmatter(str(input_path), tag_info, {"pages": n_pages, "format": "PDF"}))
         md_lines.append(f"# {stem}\n")
 
         for i, page in enumerate(pdf.pages):
@@ -246,7 +247,7 @@ def convert_pdf(input_path: Path, rel_path: str) -> list:
             page_tables = page.extract_tables() or []
 
             if page_text.strip():
-                md_lines.append(f"<!-- Page {i+1} -->")
+                md_lines.append(f"<!-- Page {i + 1} -->")
                 md_lines.append(page_text.strip())
                 md_lines.append("")
 
@@ -254,18 +255,21 @@ def convert_pdf(input_path: Path, rel_path: str) -> list:
                 if not table:
                     continue
                 headers = [str(c or "") for c in table[0]]
-                md_lines.append(f"\n**Table (page {i+1}, #{j+1})**\n")
+                md_lines.append(f"\n**Table (page {i + 1}, #{j + 1})**\n")
                 md_lines.append("| " + " | ".join(headers) + " |")
                 md_lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
                 for row in table[1:]:
                     cells = [str(c or "") for c in row]
                     md_lines.append("| " + " | ".join(cells) + " |")
                 md_lines.append("")
-                all_tables.append({
-                    "page": i + 1, "table": j + 1,
-                    "headers": headers,
-                    "rows": [[str(c or "") for c in r] for r in table[1:]],
-                })
+                all_tables.append(
+                    {
+                        "page": i + 1,
+                        "table": j + 1,
+                        "headers": headers,
+                        "rows": [[str(c or "") for c in r] for r in table[1:]],
+                    }
+                )
 
     md_path = out_dir / f"{stem}.md"
     md_path.write_text("\n".join(md_lines), encoding="utf-8")
@@ -274,23 +278,29 @@ def convert_pdf(input_path: Path, rel_path: str) -> list:
     if all_tables:
         json_path = out_dir / f"{stem}.tables.json"
         json_path.write_text(
-            json.dumps({"source": str(input_path), "tables": all_tables},
-                       indent=2, ensure_ascii=False),
+            json.dumps({"source": str(input_path), "tables": all_tables}, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
         outputs.append(str(json_path))
 
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "PDF", "pages": n_pages, "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "PDF",
+            "pages": n_pages,
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── DOCX ──────────────────────────────────────────────────────────────────────
+
 
 def convert_docx(input_path: Path, rel_path: str) -> list:
     import docx as docx_lib
@@ -309,8 +319,12 @@ def convert_docx(input_path: Path, rel_path: str) -> list:
         extra["author"] = props.author
 
     heading_map = {
-        "Heading 1": "#", "Heading 2": "##", "Heading 3": "###",
-        "Heading 4": "####", "Heading 5": "#####", "Title": "#",
+        "Heading 1": "#",
+        "Heading 2": "##",
+        "Heading 3": "###",
+        "Heading 4": "####",
+        "Heading 5": "#####",
+        "Title": "#",
     }
 
     md_lines = [build_frontmatter(str(input_path), tag_info, extra)]
@@ -344,7 +358,7 @@ def convert_docx(input_path: Path, rel_path: str) -> list:
 
     all_tables = []
     for i, table in enumerate(doc.tables):
-        md_lines.append(f"\n### Table {i+1}\n")
+        md_lines.append(f"\n### Table {i + 1}\n")
         rows = []
         for j, row in enumerate(table.rows):
             cells = [cell.text.strip().replace("\n", " ") for cell in row.cells]
@@ -354,11 +368,13 @@ def convert_docx(input_path: Path, rel_path: str) -> list:
                 md_lines.append("| " + " | ".join(["---"] * len(cells)) + " |")
             else:
                 md_lines.append("| " + " | ".join(cells) + " |")
-        all_tables.append({
-            "table_index": i,
-            "headers": rows[0] if rows else [],
-            "rows": rows[1:] if rows else [],
-        })
+        all_tables.append(
+            {
+                "table_index": i,
+                "headers": rows[0] if rows else [],
+                "rows": rows[1:] if rows else [],
+            }
+        )
 
     md_path = out_dir / f"{stem}.md"
     md_path.write_text("\n".join(md_lines), encoding="utf-8")
@@ -367,30 +383,36 @@ def convert_docx(input_path: Path, rel_path: str) -> list:
     if all_tables:
         json_path = out_dir / f"{stem}.tables.json"
         json_path.write_text(
-            json.dumps({"source": str(input_path), "tables": all_tables},
-                       indent=2, ensure_ascii=False),
+            json.dumps({"source": str(input_path), "tables": all_tables}, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
         outputs.append(str(json_path))
 
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "DOCX", "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "DOCX",
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── PPTX ──────────────────────────────────────────────────────────────────────
 
+
 def convert_pptx(input_path: Path, rel_path: str) -> list:
-    from pptx import Presentation
-    from pptx.enum.shapes import MSO_SHAPE_TYPE
     import io
     import tempfile
     import zipfile
+
+    from pptx import Presentation
+    from pptx.enum.shapes import MSO_SHAPE_TYPE
 
     tag_info = tag_for_path(rel_path)
     out_dir = output_dir_for(rel_path)
@@ -442,7 +464,7 @@ def convert_pptx(input_path: Path, rel_path: str) -> list:
         if slide.shapes.title and slide.shapes.title.text:
             title_text = slide.shapes.title.text.strip()
 
-        header = f"## Slide {i+1}"
+        header = f"## Slide {i + 1}"
         if title_text:
             header += f": {title_text}"
         md_lines.append(header + "\n")
@@ -497,24 +519,30 @@ def convert_pptx(input_path: Path, rel_path: str) -> list:
 
     json_path = out_dir / f"{stem}.json"
     json_path.write_text(
-        json.dumps({"source": str(input_path), "slides": slides_data},
-                   indent=2, ensure_ascii=False),
+        json.dumps({"source": str(input_path), "slides": slides_data}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
     outputs = [str(md_path), str(json_path)]
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "PPTX", "slides": n_slides, "images": image_count,
-        "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "PPTX",
+            "slides": n_slides,
+            "images": image_count,
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── XLSX ──────────────────────────────────────────────────────────────────────
+
 
 def convert_xlsx(input_path: Path, rel_path: str) -> list:
     import openpyxl
@@ -524,8 +552,7 @@ def convert_xlsx(input_path: Path, rel_path: str) -> list:
     stem = slugify(input_path.name)
 
     wb = openpyxl.load_workbook(str(input_path), data_only=False)
-    md_lines = [build_frontmatter(str(input_path), tag_info,
-                                  {"format": "XLSX", "sheets": len(wb.sheetnames)})]
+    md_lines = [build_frontmatter(str(input_path), tag_info, {"format": "XLSX", "sheets": len(wb.sheetnames)})]
     md_lines.append(f"# {stem}\n")
     sheets_data = []
 
@@ -548,11 +575,15 @@ def convert_xlsx(input_path: Path, rel_path: str) -> list:
                 if any(v.strip() for v in cell_values):
                     rows.append(cell_values)
 
-        sheets_data.append({
-            "name": sheet_name, "headers": headers,
-            "row_count": len(rows), "rows": rows,
-            "formulas": formulas or None,
-        })
+        sheets_data.append(
+            {
+                "name": sheet_name,
+                "headers": headers,
+                "row_count": len(rows),
+                "rows": rows,
+                "formulas": formulas or None,
+            }
+        )
 
         md_lines.append(f"## {sheet_name}\n")
         extras = f"Rows: {len(rows)} | Columns: {len(headers)}"
@@ -567,13 +598,12 @@ def convert_xlsx(input_path: Path, rel_path: str) -> list:
             for row in rows[:20]:
                 md_lines.append("| " + " | ".join(str(v) for v in row[:cols]) + " |")
             if len(rows) > 20:
-                md_lines.append(f"\n*... {len(rows)-20} more rows*\n")
+                md_lines.append(f"\n*... {len(rows) - 20} more rows*\n")
         md_lines.append("")
 
     json_path = out_dir / f"{stem}.json"
     json_path.write_text(
-        json.dumps({"source": str(input_path), "sheets": sheets_data},
-                   indent=2, ensure_ascii=False, default=str),
+        json.dumps({"source": str(input_path), "sheets": sheets_data}, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
 
@@ -581,18 +611,24 @@ def convert_xlsx(input_path: Path, rel_path: str) -> list:
     md_path.write_text("\n".join(md_lines), encoding="utf-8")
 
     outputs = [str(json_path), str(md_path)]
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "XLSX", "sheets": list(wb.sheetnames),
-        "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "XLSX",
+            "sheets": list(wb.sheetnames),
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── HTML ──────────────────────────────────────────────────────────────────────
+
 
 def convert_html(input_path: Path, rel_path: str) -> list:
     from bs4 import BeautifulSoup
@@ -609,12 +645,7 @@ def convert_html(input_path: Path, rel_path: str) -> list:
 
     page_title = soup.title.get_text(strip=True) if soup.title else stem
 
-    main = (
-        soup.find("div", class_="content")
-        or soup.find("main")
-        or soup.body
-        or soup
-    )
+    main = soup.find("div", class_="content") or soup.find("main") or soup.body or soup
 
     md_lines = [
         build_frontmatter(str(input_path), tag_info, {"format": "HTML", "title": page_title}),
@@ -650,7 +681,7 @@ def convert_html(input_path: Path, rel_path: str) -> list:
                     cells = [c.get_text(" ", strip=True) for c in row.find_all(["td", "th"])]
                     while len(cells) < len(headers):
                         cells.append("")
-                    md_lines.append("| " + " | ".join(cells[:len(headers)]) + " |")
+                    md_lines.append("| " + " | ".join(cells[: len(headers)]) + " |")
                 md_lines.append("")
         elif el.name in ("pre", "code"):
             text = el.get_text()
@@ -680,18 +711,24 @@ def convert_html(input_path: Path, rel_path: str) -> list:
     md_path.write_text("\n".join(result_lines), encoding="utf-8")
 
     outputs = [str(md_path)]
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "HTML", "title": page_title,
-        "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "HTML",
+            "title": page_title,
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── SVG ───────────────────────────────────────────────────────────────────────
+
 
 def convert_svg(input_path: Path, rel_path: str) -> list:
     from bs4 import BeautifulSoup
@@ -718,14 +755,19 @@ def convert_svg(input_path: Path, rel_path: str) -> list:
     md_path.write_text("\n".join(md_lines), encoding="utf-8")
 
     outputs = [str(md_path)]
-    INVENTORY.append({
-        "source": str(input_path), "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "SVG", "text_nodes": len(texts),
-        "outputs": outputs, "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "SVG",
+            "text_nodes": len(texts),
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
@@ -766,7 +808,8 @@ def convert_markdown(input_path: Path, rel_path: str) -> list:
                 "heading_count": len(headings),
                 "link_count": len(links),
             },
-        ) + (content + "\n" if content else ""),
+        )
+        + (content + "\n" if content else ""),
         encoding="utf-8",
     )
 
@@ -795,21 +838,24 @@ def convert_markdown(input_path: Path, rel_path: str) -> list:
     )
 
     outputs = [str(md_path), str(json_path)]
-    INVENTORY.append({
-        "source": str(input_path),
-        "relative": rel_path,
-        "classification": tag_info["classification"],
-        "technology": tag_info["technology"],
-        "source_root": tag_info["source_root"],
-        "format": "MD",
-        "title": title,
-        "outputs": outputs,
-        "converted_at": NOW,
-    })
+    INVENTORY.append(
+        {
+            "source": str(input_path),
+            "relative": rel_path,
+            "classification": tag_info["classification"],
+            "technology": tag_info["technology"],
+            "source_root": tag_info["source_root"],
+            "format": "MD",
+            "title": title,
+            "outputs": outputs,
+            "converted_at": NOW,
+        }
+    )
     return outputs
 
 
 # ─── Dispatcher ────────────────────────────────────────────────────────────────
+
 
 def should_skip(rel_path: str, ext: str):
     if ext in SKIP_EXTENSIONS:
@@ -847,11 +893,13 @@ def dispatch(input_path: Path, rel_path: str):
             return "SKIP", []
     except Exception as e:
         import traceback
+
         ERRORS.append({"file": rel_path, "error": str(e), "trace": traceback.format_exc()})
         return "ERROR", []
 
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
+
 
 def main():
     global INPUT_BASE
@@ -941,25 +989,25 @@ def main():
             tag_info = tag_for_path(rel_path)
             doc_format = existing_doc.get("format", ext.lstrip(".").upper())
             classification = existing_doc.get("classification", tag_info["classification"])
-            INVENTORY.append({
-                "source": str(full_path),
-                "relative": rel_path,
-                "classification": classification,
-                "technology": existing_doc.get("technology", tag_info["technology"]),
-                "source_root": tag_info["source_root"],
-                "format": doc_format,
-                "outputs": existing_doc.get("outputs", []),
-                "converted_at": existing_doc.get("converted_at", NOW),
-                "sha256": sha256,
-                "size_bytes": full_path.stat().st_size,
-            })
+            INVENTORY.append(
+                {
+                    "source": str(full_path),
+                    "relative": rel_path,
+                    "classification": classification,
+                    "technology": existing_doc.get("technology", tag_info["technology"]),
+                    "source_root": tag_info["source_root"],
+                    "format": doc_format,
+                    "outputs": existing_doc.get("outputs", []),
+                    "converted_at": existing_doc.get("converted_at", NOW),
+                    "sha256": sha256,
+                    "size_bytes": full_path.stat().st_size,
+                }
+            )
             print(f"  ⏭  SKIP  {rel_path}  (already ingested)")
             stats["skipped"] += 1
             stats["already_ingested"] += 1
             stats["by_format"][doc_format] = stats["by_format"].get(doc_format, 0) + 1
-            stats["by_classification"][classification] = (
-                stats["by_classification"].get(classification, 0) + 1
-            )
+            stats["by_classification"][classification] = stats["by_classification"].get(classification, 0) + 1
             continue
 
         fmt, outputs = dispatch(full_path, rel_path)
@@ -980,9 +1028,7 @@ def main():
                 print(f"         → {os.path.relpath(o, str(KB_BASE))}")
             stats["processed"] += 1
             stats["by_format"][fmt] = stats["by_format"].get(fmt, 0) + 1
-            stats["by_classification"][classification] = (
-                stats["by_classification"].get(classification, 0) + 1
-            )
+            stats["by_classification"][classification] = stats["by_classification"].get(classification, 0) + 1
 
     index = {
         "generated_at": NOW,
@@ -1009,7 +1055,7 @@ def main():
         encoding="utf-8",
     )
 
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"✅ Processed: {stats['processed']} files")
     print(f"⏭  Skipped:   {stats['skipped']} files (fonts, assets, already ingested, etc.)")
     print(f"   ↳ Already ingested: {stats['already_ingested']}")

@@ -4,7 +4,6 @@ import pytest
 import respx
 from httpx import Response
 
-from src.models.consulta import Cuenta, EstadoCuenta
 from src.services.exceptions import (
     BackendDataError,
     BackendServerError,
@@ -72,9 +71,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_buscar_por_dni_not_found_404(self, cuentas_service_real):
         """Test 404 response returns empty list."""
-        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(
-            return_value=Response(404)
-        )
+        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(return_value=Response(404))
 
         cuentas = cuentas_service_real.buscar_por_dni("99999999R")
 
@@ -95,9 +92,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_buscar_por_dni_server_error_500(self, cuentas_service_real):
         """Test 500 response raises BackendServerError."""
-        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(
-            return_value=Response(500)
-        )
+        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(return_value=Response(500))
 
         with pytest.raises(BackendServerError):
             cuentas_service_real.buscar_por_dni("12345678Z")
@@ -105,9 +100,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_buscar_por_dni_unavailable_503(self, cuentas_service_real):
         """Test 503 response raises BackendUnavailableError."""
-        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(
-            return_value=Response(503)
-        )
+        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(return_value=Response(503))
 
         with pytest.raises(BackendUnavailableError):
             cuentas_service_real.buscar_por_dni("12345678Z")
@@ -115,9 +108,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_buscar_por_dni_validation_error_400(self, cuentas_service_real):
         """Test 400 response raises BackendValidationError."""
-        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(
-            return_value=Response(400)
-        )
+        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(return_value=Response(400))
 
         with pytest.raises(BackendValidationError):
             cuentas_service_real.buscar_por_dni("invalid")
@@ -125,9 +116,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_buscar_por_dni_invalid_json(self, cuentas_service_real):
         """Test invalid JSON response raises BackendDataError."""
-        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(
-            return_value=Response(200, text="not json")
-        )
+        respx.get("http://testserver:8080/api/cuentas/buscar-por-dni").mock(return_value=Response(200, text="not json"))
 
         with pytest.raises(BackendDataError):
             cuentas_service_real.buscar_por_dni("12345678Z")
@@ -165,9 +154,7 @@ class TestCuentasServiceReal:
     @respx.mock
     def test_consultar_estados_server_error(self, cuentas_service_real):
         """Test server error during status query."""
-        respx.post("http://testserver:8080/api/cuentas/consultar-estados").mock(
-            return_value=Response(500)
-        )
+        respx.post("http://testserver:8080/api/cuentas/consultar-estados").mock(return_value=Response(500))
 
         with pytest.raises(BackendServerError):
             cuentas_service_real.consultar_estados(["ACC001"])

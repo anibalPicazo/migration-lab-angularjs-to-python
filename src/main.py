@@ -3,7 +3,6 @@
 import logging
 
 from fastapi import FastAPI, Request
-from fastapi.templating import Jinja2Templates
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from src.config import config
@@ -21,9 +20,6 @@ logger = logging.getLogger(__name__)
 
 # Initialize services
 language_service = LanguageService(config)
-
-# Initialize Jinja2 templates
-templates = Jinja2Templates(directory="src/templates")
 
 
 # Language detection middleware
@@ -60,38 +56,6 @@ app = FastAPI(
 
 # Add language detection middleware
 app.add_middleware(LanguageMiddleware)
-
-
-# Configure Jinja2 globals for locale context
-def get_current_locale(request: Request) -> str:
-    """Get current locale from request state."""
-    return getattr(request.state, "locale", config.default_locale)
-
-
-def get_locale_labels() -> dict[str, str]:
-    """Get human-readable labels for locales."""
-    # TODO: Replace with Babel gettext when translations are ready
-    return {
-        "es_ES": "Español",
-        "en_EN": "English",
-    }
-
-
-# Make locale context available in all templates
-@app.middleware("http")
-async def add_template_context(request: Request, call_next):
-    """Add locale context to all template renders."""
-    response = await call_next(request)
-    return response
-
-
-# Configure Jinja2 environment (make globals available)
-templates.env.globals["current_locale"] = lambda: config.default_locale
-templates.env.globals["supported_locales"] = config.supported_locales
-templates.env.globals["locale_labels"] = get_locale_labels()
-
-# Placeholder for gettext function (will be replaced with Babel)
-templates.env.globals["_"] = lambda key: key  # Temporary fallback
 
 
 # Mount static files

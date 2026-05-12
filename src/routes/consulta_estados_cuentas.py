@@ -5,63 +5,17 @@ from typing import List
 
 from fastapi import APIRouter, Form, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
-from fastapi.templating import Jinja2Templates
 
 from src.config import config
 from src.models.consulta import Cuenta
 from src.services.cuentas_service import CuentasService
 from src.services.exceptions import BackendError
+from src.template_utils import get_template_context, templates
 from src.utils.validators import validate_dni
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
-templates = Jinja2Templates(directory="src/templates")
-
-# Translations dictionary (temporary until full i18n is implemented)
-TRANSLATIONS = {
-    "es_ES": {
-        "page_title": "Consulta Estados de Cuentas",
-        "label_dni": "DNI",
-        "btn_search": "Buscar",
-        "btn_consult_all": "Consultar Todos",
-        "btn_consult_selected": "Consultar Seleccionados",
-        "help_dni": "Ingrese un DNI español válido (8 dígitos + 1 letra)",
-        "no_results": "No se encontraron cuentas para el DNI ingresado",
-        "label_cuenta_id": "ID de Cuenta",
-        "label_estado": "Estado",
-        "label_select_all": "Seleccionar Todos",
-        "label_accounts_found": "Cuentas encontradas",
-        "language_selector_label": "Seleccionar idioma",
-    },
-    "en_EN": {
-        "page_title": "Account Status Query",
-        "label_dni": "DNI",
-        "btn_search": "Search",
-        "btn_consult_all": "Query All",
-        "btn_consult_selected": "Query Selected",
-        "help_dni": "Enter a valid Spanish DNI (8 digits + 1 letter)",
-        "no_results": "No accounts found for the entered DNI",
-        "label_cuenta_id": "Account ID",
-        "label_estado": "Status",
-        "label_select_all": "Select All",
-        "label_accounts_found": "Accounts found",
-        "language_selector_label": "Select language",
-    },
-}
-
-def get_translation(key: str, locale: str = "es_ES") -> str:
-    """Get translation for a key."""
-    return TRANSLATIONS.get(locale, TRANSLATIONS["es_ES"]).get(key, key)
-
-# Configure Jinja2 environment
-templates.env.globals["_"] = lambda key: get_translation(key, config.default_locale)
-templates.env.globals["current_locale"] = config.default_locale
-templates.env.globals["supported_locales"] = config.supported_locales
-templates.env.globals["locale_labels"] = {
-    "es_ES": "Español",
-    "en_EN": "English",
-}
 
 # Initialize service
 cuentas_service = CuentasService(config)
@@ -102,12 +56,15 @@ async def consulta_estados_cuentas_get(
     return templates.TemplateResponse(
         request=request,
         name="consulta_estados_cuentas.html",
-        context={
-            "dni": dni,
-            "error": error,
-            "cuentas": cuentas,
-            "cuentas_list": cuentas_list,
-        },
+        context=get_template_context(
+            request,
+            {
+                "dni": dni,
+                "error": error,
+                "cuentas": cuentas,
+                "cuentas_list": cuentas_list,
+            },
+        ),
     )
 
 

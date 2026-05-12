@@ -37,10 +37,7 @@ class TestSetLanguageEndpoint:
         )
 
         assert response.status_code == 302
-        assert (
-            response.headers["location"]
-            == "http://testserver/consulta-estados-cuentas"
-        )
+        assert response.headers["location"] == "http://testserver/consulta-estados-cuentas"
 
     def test_set_language_redirect_to_root_without_referer(self, client):
         """Redirects to root when no Referer header."""
