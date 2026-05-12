@@ -17,24 +17,9 @@
         onchange="this.form.submit()"
       >
         {% for locale in supported_locales %}
-        <option value="{{ locale }}" {% if locale == current_locale %}selected{% endif %}>
-          {{ locale_labels.get(locale, locale) }}
-        </option>
+       <option value="{{ locale }}" {% if locale == current_locale %}selected{% endif %}>{{ locale_labels.get(locale, locale) }}</option>
         {% endfor %}
       </select>
     </form>
   </div>
 </header>
-
-<style>
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-</style>

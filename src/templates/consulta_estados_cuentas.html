@@ -1,35 +1,20 @@
-{% extends "base.html" %} {% block title %}{{ _('page_title') }}{% endblock %}
-{% block extra_styles %} h1 { color: #2c3e50; margin-bottom: 30px; text-align:
-center; } .form-group { margin-bottom: 20px; } label { display: block;
-margin-bottom: 5px; font-weight: 600; color: #555; } input[type="text"] { width:
-100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size:
-16px; } input[type="text"]:focus { outline: none; border-color: #3498db; }
-.help-text { font-size: 14px; color: #777; margin-top: 5px; } .error {
-background-color: #fee; border: 1px solid #fcc; border-radius: 4px; padding:
-10px; margin-bottom: 20px; color: #c33; } .btn { padding: 10px 20px; border:
-none; border-radius: 4px; font-size: 16px; cursor: pointer; transition:
-background-color 0.2s; } .btn-primary { background-color: #3498db; color: white;
-} .btn-primary:hover:not(:disabled) { background-color: #2980b9; } .btn-success
-{ background-color: #27ae60; color: white; } .btn-success:hover:not(:disabled) {
-background-color: #229954; } .btn-secondary { background-color: #95a5a6; color:
-white; } .btn-secondary:hover:not(:disabled) { background-color: #7f8c8d; }
-.btn:disabled { opacity: 0.5; cursor: not-allowed; } .results-section {
-margin-top: 30px; } table { width: 100%; border-collapse: collapse; margin-top:
-15px; } th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd;
-} th { background-color: #f8f9fa; font-weight: 600; color: #555; } tr:hover {
-background-color: #f8f9fa; } .checkbox-cell { width: 50px; text-align: center; }
-input[type="checkbox"] { cursor: pointer; width: 18px; height: 18px; }
-.button-group { margin-top: 15px; display: flex; gap: 10px; } .no-results {
-text-align: center; padding: 40px; color: #777; } .estado-badge { padding: 4px
-8px; border-radius: 3px; font-size: 12px; font-weight: 600; text-transform:
-uppercase; } .estado-activo { background-color: #d4edda; color: #155724; }
-.estado-bloqueado { background-color: #fff3cd; color: #856404; }
-.estado-inactivo { background-color: #f8d7da; color: #721c24; } .estado-cerrado
-{ background-color: #e2e3e5; color: #383d41; } .estado-desconocido {
-background-color: #d1ecf1; color: #0c5460; } {% endblock %} {% block content %}
-<div class="container">
-  <h1>{{ _('page_title') }}</h1>
+{% extends "base.html" %}
+{% block title %}{{ _('page_title') }}{% endblock %}
 
+{% block extra_styles %}
+.results-section {
+  margin-top: var(--space-xl);
+}
+
+.actions-bar {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+{% endblock %}
+
+{% block content %}
+<div class="container">
   <!-- Error message -->
   {% if error %}
   <div class="error">
@@ -50,6 +35,7 @@ background-color: #d1ecf1; color: #0c5460; } {% endblock %} {% block content %}
     method="POST"
     action="/consulta-estados-cuentas/buscar-dni"
     id="dni-form"
+    class="search-form-inline"
   >
     <div class="form-group">
       <label for="dni">DNI:</label>
@@ -68,13 +54,48 @@ background-color: #d1ecf1; color: #0c5460; } {% endblock %} {% block content %}
         Ingrese un DNI español válido (8 dígitos + 1 letra)
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Buscar</button>
+    <button type="submit" class="btn btn-primary btn-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      Buscar
+    </button>
   </form>
 
   <!-- Results section -->
   {% if cuentas %}
   <div class="results-section">
-    <h2>Cuentas encontradas ({{ cuentas|length }})</h2>
+    <!-- Bulk operation buttons -->
+    <div class="actions-bar">
+      <div class="button-group">
+        <form
+          method="POST"
+          action="/consulta-estados-cuentas/consultar-todos"
+          style="display: inline"
+          id="consultar-todos-form"
+          onsubmit="return prepareConsultarTodos();"
+        >
+          <input type="hidden" name="dni" value="{{ dni }}" />
+          <input
+            type="hidden"
+            name="cuentas_json"
+            id="cuentas-json-todos"
+            value=""
+          />
+          <button type="submit" class="btn btn-primary">Consultar Todos</button>
+        </form>
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="consultar-seleccionados-btn"
+          onclick="submitSelectedAccounts()"
+          disabled
+        >
+          Consultar Seleccionados
+        </button>
+      </div>
+    </div>
 
     <!-- Results table -->
     <table>
@@ -110,42 +131,13 @@ background-color: #d1ecf1; color: #0c5460; } {% endblock %} {% block content %}
               {{ cuenta.estado }}
             </span>
             {% else %}
-            <span style="color: #999">—</span>
+            <span style="color: var(--color-gray-500)">—</span>
             {% endif %}
           </td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
-
-    <!-- Bulk operation buttons -->
-    <div class="button-group">
-      <form
-        method="POST"
-        action="/consulta-estados-cuentas/consultar-todos"
-        style="display: inline"
-        id="consultar-todos-form"
-        onsubmit="return prepareConsultarTodos();"
-      >
-        <input type="hidden" name="dni" value="{{ dni }}" />
-        <input
-          type="hidden"
-          name="cuentas_json"
-          id="cuentas-json-todos"
-          value=""
-        />
-        <button type="submit" class="btn btn-success">Consultar Todos</button>
-      </form>
-
-      <button
-        type="button"
-        class="btn btn-secondary"
-        id="consultar-seleccionados-btn"
-        onclick="submitSelectedAccounts()"
-      >
-        Consultar Seleccionados
-      </button>
-    </div>
 
     <!-- Hidden form for selected accounts -->
     <form
@@ -209,13 +201,33 @@ background-color: #d1ecf1; color: #0c5460; } {% endblock %} {% block content %}
     return true;
   }
 
+  // Update button state based on selection
+  function updateButtonState() {
+    const checkboxes = document.querySelectorAll(".account-checkbox:checked");
+    const btn = document.getElementById("consultar-seleccionados-btn");
+    if (btn) {
+      btn.disabled = checkboxes.length === 0;
+    }
+  }
+
   // Toggle all checkboxes
   function toggleSelectAll(source) {
     const checkboxes = document.querySelectorAll(".account-checkbox");
     checkboxes.forEach((checkbox) => {
       checkbox.checked = source.checked;
     });
+    updateButtonState();
   }
+
+  // Add event listeners to checkboxes
+  document.addEventListener("DOMContentLoaded", function() {
+    const checkboxes = document.querySelectorAll(".account-checkbox");
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", updateButtonState);
+    });
+    // Initial state
+    updateButtonState();
+  });
 
   // Submit selected accounts
   function submitSelectedAccounts() {
