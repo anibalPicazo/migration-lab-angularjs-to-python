@@ -3,11 +3,10 @@
 import logging
 from typing import Optional
 
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends, Form, HTTPException, Request
 from fastapi.responses import RedirectResponse
 
 from src.config import AppConfig, config
-from src.models.language import SetLanguageRequest
 
 logger = logging.getLogger(__name__)
 
@@ -17,20 +16,22 @@ router = APIRouter()
 @router.post("/api/set-language")
 def set_language(
     request: Request,
-    language_request: SetLanguageRequest,
+    locale: str = Form(..., pattern="^(es_ES|en_EN)$"),
     app_config: AppConfig = Depends(lambda: config),
 ) -> RedirectResponse:
     """Set user's language preference via cookie.
 
     Args:
         request: FastAPI request object
-        language_request: Validated language preference request
+        locale: Language locale code from form data (es_ES or en_EN)
         app_config: Application configuration
 
     Returns:
         RedirectResponse with updated language cookie
     """
-    locale = language_request.locale
+    # Validate locale against supported locales
+    if locale not in app_config.supported_locales:
+        raise HTTPException(status_code=400, detail=f"Unsupported locale: {locale}")
 
     # Determine redirect URL (Referer or fallback to root)
     referer: Optional[str] = request.headers.get("referer")

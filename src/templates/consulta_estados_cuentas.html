@@ -18,15 +18,7 @@
   <!-- Error message -->
   {% if error %}
   <div class="error">
-    {% if error == "errors.dni_required" %} El DNI es obligatorio. {% elif error
-    == "errors.dni_invalid_format" %} DNI inválido. Formato: 8 dígitos + 1 letra
-    (Ej. 12345678Z) {% elif error == "errors.dni_invalid_checksum" %} DNI
-    inválido. La letra no coincide con el número. {% elif error ==
-    "errors.dni_not_found" %} No se encontraron cuentas para este DNI. {% elif
-    error == "errors.backend_error" %} Error al conectar con el servidor.
-    Intente más tarde. {% elif error == "errors.no_selection" %} Debe
-    seleccionar al menos una cuenta. {% else %} Error desconocido. Intente
-    nuevamente. {% endif %}
+    {{ _(error) if error.startswith('errors.') else _('errors.unknown') }}
   </div>
   {% endif %}
 
@@ -38,27 +30,27 @@
     class="search-form-inline"
   >
     <div class="form-group">
-      <label for="dni">DNI:</label>
+      <label for="dni">{{ _('form.dni_label') }}</label>
       <input
         type="text"
         id="dni"
         name="dni"
         value="{{ dni }}"
-        placeholder="Ej. 12345678Z"
+        placeholder="{{ _('form.dni_placeholder') }}"
         pattern="[0-9]{8}[A-Za-z]"
-        title="Debe ser 8 dígitos seguidos de 1 letra (Ej. 12345678Z)"
+        title="{{ _('form.dni_title') }}"
         maxlength="9"
         required
       />
       <div class="help-text">
-        Ingrese un DNI español válido (8 dígitos + 1 letra)
+        {{ _('form.dni_help') }}
       </div>
     </div>
     <button type="submit" class="btn btn-primary btn-icon">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
-      Buscar
+      {{ _('btn.search') }}
     </button>
   </form>
 
@@ -82,7 +74,7 @@
             id="cuentas-json-todos"
             value=""
           />
-          <button type="submit" class="btn btn-primary">Consultar Todos</button>
+          <button type="submit" class="btn btn-primary">{{ _('btn.consult_all') }}</button>
         </form>
 
         <button
@@ -92,7 +84,7 @@
           onclick="submitSelectedAccounts()"
           disabled
         >
-          Consultar Seleccionados
+          {{ _('btn.consult_selected') }}
         </button>
       </div>
     </div>
@@ -106,10 +98,11 @@
               type="checkbox"
               id="select-all"
               onclick="toggleSelectAll(this)"
+              aria-label="{{ _('table.select_all') }}"
             />
           </th>
-          <th>ID de Cuenta</th>
-          <th>Estado</th>
+          <th>{{ _('table.account_id') }}</th>
+          <th>{{ _('table.status') }}</th>
         </tr>
       </thead>
       <tbody>
@@ -157,13 +150,19 @@
     </form>
   </div>
   {% elif dni %}
-  <div class="no-results">No se encontraron cuentas para el DNI ingresado.</div>
+  <div class="no-results">{{ _('msg.no_accounts_found') }}</div>
   {% endif %}
 </div>
 {% endblock %} {% block extra_scripts %}
 <script>
   // Store cuentas data from server
   const cuentasData = {{ cuentas_list | tojson | safe }};
+  
+  // Translations for JavaScript
+  const i18n = {
+    alertDniInvalid: {{ _('alert.dni_invalid') | tojson | safe }},
+    alertSelectAtLeastOne: {{ _('alert.select_at_least_one') | tojson | safe }}
+  };
 
   // DNI validation and normalization
   const dniInput = document.getElementById("dni");
@@ -183,9 +182,7 @@
       const dniPattern = /^[0-9]{8}[A-Z]$/;
       if (!dniPattern.test(dni)) {
         e.preventDefault();
-        alert(
-          "DNI inválido. Debe ser 8 dígitos seguidos de 1 letra (Ej. 12345678Z)",
-        );
+        alert(i18n.alertDniInvalid);
         return false;
       }
 
@@ -236,7 +233,7 @@
     );
 
     if (checkboxes.length === 0) {
-      alert("Debe seleccionar al menos una cuenta.");
+      alert(i18n.alertSelectAtLeastOne);
       return;
     }
 

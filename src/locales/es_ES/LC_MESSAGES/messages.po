@@ -76,3 +76,68 @@ msgstr "Error durante la búsqueda"
 
 msgid "error_consult"
 msgstr "Error consultando cuentas"
+
+msgid "errors.dni_required"
+msgstr "El DNI es obligatorio."
+
+msgid "errors.dni_invalid_format"
+msgstr "DNI inválido. Formato: 8 dígitos + 1 letra (Ej. 12345678Z)"
+
+msgid "errors.dni_invalid_checksum"
+msgstr "DNI inválido. La letra no coincide con el número."
+
+msgid "errors.dni_not_found"
+msgstr "No se encontraron cuentas para este DNI."
+
+msgid "errors.backend_error"
+msgstr "Error al conectar con el servidor. Intente más tarde."
+
+msgid "errors.no_selection"
+msgstr "Debe seleccionar al menos una cuenta."
+
+msgid "errors.unknown"
+msgstr "Error desconocido. Intente nuevamente."
+
+# Form elements
+msgid "form.dni_label"
+msgstr "DNI:"
+
+msgid "form.dni_placeholder"
+msgstr "Ej. 12345678Z"
+
+msgid "form.dni_title"
+msgstr "Debe ser 8 dígitos seguidos de 1 letra (Ej. 12345678Z)"
+
+msgid "form.dni_help"
+msgstr "Ingrese un DNI español válido (8 dígitos + 1 letra)"
+
+# Table headers
+msgid "table.select_all"
+msgstr "Seleccionar todos"
+
+msgid "table.account_id"
+msgstr "ID de Cuenta"
+
+msgid "table.status"
+msgstr "Estado"
+
+# Buttons
+msgid "btn.search"
+msgstr "Buscar"
+
+msgid "btn.consult_all"
+msgstr "Consultar Todos"
+
+msgid "btn.consult_selected"
+msgstr "Consultar Seleccionados"
+
+# Messages
+msgid "msg.no_accounts_found"
+msgstr "No se encontraron cuentas para el DNI ingresado."
+
+# JavaScript alerts
+msgid "alert.dni_invalid"
+msgstr "DNI inválido. Debe ser 8 dígitos seguidos de 1 letra (Ej. 12345678Z)"
+
+msgid "alert.select_at_least_one"
+msgstr "Debe seleccionar al menos una cuenta."

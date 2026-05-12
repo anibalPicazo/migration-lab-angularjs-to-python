@@ -19,7 +19,7 @@ class TestSetLanguageEndpoint:
         """Successful language switch sets cookie and redirects."""
         response = client.post(
             "/api/set-language",
-            json={"locale": "en_EN"},
+            data={"locale": "en_EN"},
             follow_redirects=False,
         )
 
@@ -31,7 +31,7 @@ class TestSetLanguageEndpoint:
         """Redirects to Referer URL if provided."""
         response = client.post(
             "/api/set-language",
-            json={"locale": "en_EN"},
+            data={"locale": "en_EN"},
             headers={"referer": "http://testserver/consulta-estados-cuentas"},
             follow_redirects=False,
         )
@@ -43,7 +43,7 @@ class TestSetLanguageEndpoint:
         """Redirects to root when no Referer header."""
         response = client.post(
             "/api/set-language",
-            json={"locale": "es_ES"},
+            data={"locale": "es_ES"},
             follow_redirects=False,
         )
 
@@ -54,7 +54,7 @@ class TestSetLanguageEndpoint:
         """Invalid locale returns 422 validation error."""
         response = client.post(
             "/api/set-language",
-            json={"locale": "invalid"},
+            data={"locale": "invalid"},
         )
 
         assert response.status_code == 422
@@ -66,7 +66,7 @@ class TestSetLanguageEndpoint:
         """Cookie has correct security attributes."""
         response = client.post(
             "/api/set-language",
-            json={"locale": "en_EN"},
+            data={"locale": "en_EN"},
             follow_redirects=False,
         )
 
@@ -83,7 +83,7 @@ class TestSetLanguageEndpoint:
         # Set Spanish first
         response1 = client.post(
             "/api/set-language",
-            json={"locale": "es_ES"},
+            data={"locale": "es_ES"},
             follow_redirects=False,
         )
         assert response1.status_code == 302
@@ -92,7 +92,7 @@ class TestSetLanguageEndpoint:
         # Switch to English
         response2 = client.post(
             "/api/set-language",
-            json={"locale": "en_EN"},
+            data={"locale": "en_EN"},
             follow_redirects=False,
         )
         assert response2.status_code == 302
@@ -102,7 +102,7 @@ class TestSetLanguageEndpoint:
         """Missing locale field returns validation error."""
         response = client.post(
             "/api/set-language",
-            json={},
+            data={},
         )
 
         assert response.status_code == 422

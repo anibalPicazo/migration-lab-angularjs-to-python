@@ -76,3 +76,68 @@ msgstr "Error during search"
 
 msgid "error_consult"
 msgstr "Error consulting accounts"
+
+msgid "errors.dni_required"
+msgstr "DNI is required."
+
+msgid "errors.dni_invalid_format"
+msgstr "Invalid DNI. Format: 8 digits + 1 letter (e.g., 12345678Z)"
+
+msgid "errors.dni_invalid_checksum"
+msgstr "Invalid DNI. The letter does not match the number."
+
+msgid "errors.dni_not_found"
+msgstr "No accounts found for this DNI."
+
+msgid "errors.backend_error"
+msgstr "Error connecting to the server. Please try again later."
+
+msgid "errors.no_selection"
+msgstr "You must select at least one account."
+
+msgid "errors.unknown"
+msgstr "Unknown error. Please try again."
+
+# Form elements
+msgid "form.dni_label"
+msgstr "DNI:"
+
+msgid "form.dni_placeholder"
+msgstr "e.g., 12345678Z"
+
+msgid "form.dni_title"
+msgstr "Must be 8 digits followed by 1 letter (e.g., 12345678Z)"
+
+msgid "form.dni_help"
+msgstr "Enter a valid Spanish DNI (8 digits + 1 letter)"
+
+# Table headers
+msgid "table.select_all"
+msgstr "Select all"
+
+msgid "table.account_id"
+msgstr "Account ID"
+
+msgid "table.status"
+msgstr "Status"
+
+# Buttons
+msgid "btn.search"
+msgstr "Search"
+
+msgid "btn.consult_all"
+msgstr "Consult All"
+
+msgid "btn.consult_selected"
+msgstr "Consult Selected"
+
+# Messages
+msgid "msg.no_accounts_found"
+msgstr "No accounts found for the entered DNI."
+
+# JavaScript alerts
+msgid "alert.dni_invalid"
+msgstr "Invalid DNI. Must be 8 digits followed by 1 letter (e.g., 12345678Z)"
+
+msgid "alert.select_at_least_one"
+msgstr "You must select at least one account."
